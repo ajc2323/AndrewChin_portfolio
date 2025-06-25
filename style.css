@@ -1,6 +1,20 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background: #f0f0f0;
   color: #333;
 }
-/* Sidebar, buttons, layout, responsive tweaks, etc. */
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+}
