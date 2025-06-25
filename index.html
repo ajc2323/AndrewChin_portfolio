@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Andrew Chin | Mechanical Engineer</title>
+  <title>Andrew Chin | Projects</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,36 +10,33 @@
     <h1>Andrew Chin</h1>
     <p>Mechanical Engineer | Product Designer | Innovator</p>
     <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="assets/AndrewChin_Resume.pdf" download>Resume</a></li>
-      </ul>
+      <a href="index.html">Projects</a> |
+      <a href="about.html">About</a> |
+      <a href="#contact">Contact</a> |
+      <a href="assets/AndrewChin_Resume.pdf" download>Resume</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a mechanical engineer based in New York, with experience in product development, rapid prototyping, and user-centered hardware design. I specialize in CAD (SolidWorks, Creo), FEA, and electromechanical integration. My goal is to build accessible, elegant solutions that improve lives.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <a href="projects/gripping-device.html"><strong>Gripping Assist Device</strong></a> — Adaptive gym handle for individuals with gripping disabilities. CAD + FEA + mechanism design.
-      </li>
-      <li>
-        <a href="projects/lilu-bra.html"><strong>Smart Sensing Bra @ Lilu Inc.</strong></a> — Sensor evaluation and integration for pressure monitoring during lactation.
-      </li>
-      <li>
-        <a href="projects/breastpump.html"><strong>Wearable Breast Pump</strong></a> — Led translation of industrial design to engineering design for DFM and integration.
-      </li>
-    </ul>
-  </section>
+  <main>
+    <section class="projects-gallery">
+      <h2 class="gallery-title">Projects</h2>
+      <div class="project-grid">
+        <a href="gripping-device.html" class="project-card">
+          <img src="assets/images/gripping-device-thumbnail.jpg" alt="Gripping Assist Device">
+          <p>Gripping Assist Device</p>
+        </a>
+        <a href="lilu-bra.html" class="project-card">
+          <img src="assets/images/lilu-bra-thumbnail.jpg" alt="Smart Sensing Bra">
+          <p>Smart Sensing Bra</p>
+        </a>
+        <a href="breastpump.html" class="project-card">
+          <img src="assets/images/breastpump-thumbnail.jpg" alt="Wearable Breast Pump">
+          <p>Wearable Breast Pump</p>
+        </a>
+        <!-- Add more projects here -->
+      </div>
+    </section>
+  </main>
 
   <footer id="contact">
     <h2>Contact</h2>
