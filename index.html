@@ -9,24 +9,47 @@
   <header>
     <h1>Andrew Chin</h1>
     <p>Mechanical Engineer | Product Designer | Innovator</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/AndrewChin_Resume.pdf" download>Resume</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About Me</h2>
-    <p>I’m a mechanical engineer with expertise in CAD, prototyping, and user-centered design...</p>
+    <p>
+      I’m a mechanical engineer based in New York, with experience in product development, rapid prototyping, and user-centered hardware design. I specialize in CAD (SolidWorks, Creo), FEA, and electromechanical integration. My goal is to build accessible, elegant solutions that improve lives.
+    </p>
   </section>
 
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><a href="projects/gripping-device.html">Gripping Assist Device</a></li>
-      <li><a href="projects/lilu-bra.html">Smart Sensing Bra @ Lilu Inc.</a></li>
-      <li><a href="projects/breastpump.html">Wearable Breast Pump</a></li>
+      <li>
+        <a href="projects/gripping-device.html"><strong>Gripping Assist Device</strong></a> — Adaptive gym handle for individuals with gripping disabilities. CAD + FEA + mechanism design.
+      </li>
+      <li>
+        <a href="projects/lilu-bra.html"><strong>Smart Sensing Bra @ Lilu Inc.</strong></a> — Sensor evaluation and integration for pressure monitoring during lactation.
+      </li>
+      <li>
+        <a href="projects/breastpump.html"><strong>Wearable Breast Pump</strong></a> — Led translation of industrial design to engineering design for DFM and integration.
+      </li>
     </ul>
   </section>
 
-  <footer>
-    <p>Contact: ajc2323@columbia.edu</p>
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+      <input type="submit" value="Send">
+    </form>
   </footer>
 </body>
 </html>
