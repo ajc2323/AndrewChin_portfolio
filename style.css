@@ -9,7 +9,7 @@ body {
 /* Header Styles */
 header {
   background-color: #0166d1; /* Blue */
-  color: white;
+  color: black;
   text-align: center;
   padding: 20px 0;
 }
@@ -25,7 +25,7 @@ header p {
 }
 
 nav a {
-  color: white;
+  color: blue;
   text-decoration: none;
   margin: 0 10px;
 }
