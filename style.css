@@ -86,7 +86,7 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.about-container {
+.about-flex {
   display: flex;
   align-items: flex-start;
   gap: 30px;
@@ -98,7 +98,7 @@ main {
   width: 180px;
   height: 240px;
   object-fit: cover;
-  border-radius: 50% / 40%; /* Oval shape */
+  border-radius: 50% / 40%;
   border: 3px solid #007BFF;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
@@ -106,5 +106,5 @@ main {
 
 .about-text {
   flex: 1;
-  min-width: 250px;
+  min-width: 260px;
 }
