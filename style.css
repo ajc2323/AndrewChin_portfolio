@@ -1,16 +1,17 @@
+/* General Reset */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
   color: #333;
 }
 
+/* Header Styles */
 header {
-  background-color: #007BFF;
-  color: white;
+  background-color: #0166d1; /* Blue */
+  color: black;
   text-align: center;
-  padding: 20px 10px;
+  padding: 20px 0;
 }
 
 header h1 {
@@ -24,15 +25,88 @@ header p {
 }
 
 nav a {
-  color: #fff;
+  color: blue;
   text-decoration: none;
   margin: 0 10px;
 }
 
-main.project-detail {
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
   padding: 40px 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
+}
+
+/* Section Title */
+.gallery-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Project Card */
+.project-card {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: lightblue;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card img {
+  width: 100%;
+  height: 400px;          /* Ensures consistent image height */
+  object-fit: cover;      /* Crops image to fill without distortion */
+  display: center;
+}
+
+.project-card p {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.profile-image-oval-body {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50% / 40%;
+  border: 3px solid #007BFF;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 260px;
 }
 
 .project-banner {
@@ -40,29 +114,18 @@ main.project-detail {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .bubble {
   background-color: white;
-  border-radius: 20px;
+  border-radius: 20px; /* Bubble corners */
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 .image-bubble {
   text-align: center;
-}
-
-.back-link {
-  display: inline-block;
-  margin-top: 20px;
-  color: #007BFF;
-  text-decoration: none;
-}
-
-.back-link:hover {
-  text-decoration: underline;
 }
