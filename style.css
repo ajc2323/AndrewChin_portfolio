@@ -129,3 +129,39 @@ main {
 .image-bubble {
   text-align: center;
 }
+
+.hero-image {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.inline-image {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mechanism-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  text-align: center;
+}
+
+.ux-grid,
+.proto-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  text-align: center;
+}
+
+.mechanism-grid,
+.ux-grid,
+.proto-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 15px;
+}
+
