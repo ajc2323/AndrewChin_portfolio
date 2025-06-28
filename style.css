@@ -146,6 +146,13 @@ main {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.inline-image2 {
+  width: 200%;
+  max-width: 240px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .mechanism-grid {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   text-align: center;
