@@ -193,3 +193,25 @@ main {
   font-size: 0.95em;
   color: #333;
 }
+
+.image-grid-3x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+  justify-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image-grid-3x2 img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid-3x2 p {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #333;
+}
