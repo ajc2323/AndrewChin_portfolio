@@ -310,7 +310,7 @@ main {
 
 .scale-500px img {
   width: 100%;
-  max-width: 750px;
+  max-width: 200;
   transform: none;
 }
 
