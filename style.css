@@ -292,6 +292,7 @@ main {
   width: 100%;
   height: auto;
   display: block;
+  justify-items: center;
   margin-bottom: 10px;
 }
 
