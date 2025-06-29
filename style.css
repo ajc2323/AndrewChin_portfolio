@@ -239,10 +239,10 @@ main {
 }
 
 .concept-header {
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #003366;
+  color: black;
 }
 
 .concept-flex {
@@ -298,12 +298,14 @@ main {
 .scale-150 img {
   width: 100%;
   max-width: 300px;
+  max-height: 300px;
   transform: none;
 }
 
 .scale-200 img {
   width: 100%;
   max-width: 300px;
+  max-height: 300px;
   transform: none;
 }
 
