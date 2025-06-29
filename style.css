@@ -232,3 +232,65 @@ main {
   height: 100%;
   border-radius: 12px;
 }
+
+/* Concept Sections */
+.concept-block {
+  margin-bottom: 40px;
+}
+
+.concept-header {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.concept-flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.concept-flex .concept-image,
+.concept-grid > div {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.concept-image img,
+.concept-grid img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.concept-image p,
+.concept-grid p {
+  margin-top: 8px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+  justify-items: center;
+  text-align: center;
+}
+
+.full-width {
+  text-align: center;
+  width: 100%;
+}
+
+.full-width img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
