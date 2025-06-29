@@ -290,7 +290,7 @@ main {
 
 .full-width img {
   width: 100%;
-  height: auto;
+  max-width: 450px;
   justify-content: center;
   margin-bottom: 10px;
 }
