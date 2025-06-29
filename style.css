@@ -269,6 +269,7 @@ main {
 .concept-image p,
 .concept-grid p {
   margin-top: 8px;
+  margin-bottom: 8px;
   font-size: 0.95em;
   color: #333;
 }
