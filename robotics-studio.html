@@ -38,32 +38,65 @@
 
     <div class="bubble">
       <h3>Concept Development</h3>
-      <p>We began with three distinct robot concepts: <strong>Techo Gecko</strong> (bipedal), <strong>Bob the Robot</strong> (quadrupedal), and <strong>Bolto the Dog</strong> (quadrupedal). Each concept was evaluated for gait feasibility, stability, servo requirements, and design-for-manufacture using 3D printing constraints.</p>
+      <p>We explored three robot designs with unique kinematic and architectural features. Early sketching and system planning allowed us to rapidly iterate and evaluate feasibility before committing to a direction.</p>
 
-      <div class="image-grid-3x2">
-        <div>
-          <img src="assets/images/concept-techo-gecko.jpg" alt="Techo Gecko Concept Sketch">
-          <p><strong>Techo Gecko</strong><br>Bipedal design with dynamic balancing challenges.</p>
+      <!-- Techo Gecko Section -->
+      <section class="concept-block">
+        <div class="concept-header">Techo Gecko (Bipedal)</div>
+        <div class="concept-flex">
+          <div class="concept-image">
+            <img src="assets/images/techo-gecko-main.jpg" alt="Techo Gecko Main Sketch">
+            <p><strong>Main Concept:</strong> Dynamic biped with narrow hips and high center of mass.</p>
+          </div>
+          <div class="concept-image">
+            <img src="assets/images/techo-gecko-detail.jpg" alt="Techo Gecko Secondary Sketch">
+            <p><strong>Servo layout and balance consideration</strong> in side-profile sketch.</p>
+          </div>
         </div>
-        <div>
-          <img src="assets/images/concept-bob-robot.jpg" alt="Bob the Robot Concept Sketch">
-          <p><strong>Bob the Robot</strong><br>Quadruped with wider stance for static stability.</p>
-        </div>
-        <div>
-          <img src="assets/images/concept-bolto.jpg" alt="Bolto Concept Sketch">
-          <p><strong>Bolto the Dog</strong><br>Inspired by animal gait. Narrow profile, serial-linkage legs.</p>
-        </div>
-      </div>
+      </section>
 
-      <p>From the start, <strong>Bolto</strong> stood out for its biomimetic structure and efficient motion planning. Drawing inspiration from agile quadrupeds like cats, the robot’s design emphasized narrow gait spacing and a center-weighted chassis for balance during fast walking.</p>
+      <!-- Bob the Robot Section -->
+      <section class="concept-block">
+        <div class="concept-header">Bob the Robot (Quadruped)</div>
+        <div class="concept-flex">
+          <div class="concept-image">
+            <img src="assets/images/bob-main.jpg" alt="Bob the Robot Main Sketch">
+            <p><strong>Main Concept:</strong> Wide-footed quadruped prioritizing static stability.</p>
+          </div>
+          <div class="concept-image">
+            <img src="assets/images/bob-layout.jpg" alt="Bob Internal Layout">
+            <p><strong>Internal wiring and motor placement</strong> optimized for ease of assembly.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bolto the Dog Section -->
+      <section class="concept-block">
+        <div class="concept-header">Bolto the Dog (Quadruped)</div>
+        <div class="concept-grid">
+          <div>
+            <img src="assets/images/bolto-main.jpg" alt="Bolto Main Sketch">
+            <p><strong>Main Concept:</strong> Compact feline-inspired quadruped for high-speed gait.</p>
+          </div>
+          <div>
+            <img src="assets/images/bolto-layout.jpg" alt="Bolto Internal Layout">
+            <p><strong>Internal electronics layout</strong> placed to ensure center of mass balance.</p>
+          </div>
+          <div>
+            <img src="assets/images/bolto-schematic.jpg" alt="Bolto System Plan">
+            <p><strong>System overview sketch</strong> showing mechanical-electrical integration.</p>
+          </div>
+        </div>
+      </section>
+
+      <p>Ultimately, we selected <strong>Bolto</strong> due to its biomimetic inspiration, mechanical simplicity, and ease of motor coordination. With a center-mounted battery, lightweight limbs, and clean linkage design, it best met our performance goals.</p>
 
       <div class="image-bubble">
-        <img src="assets/images/power-calculation.jpg" alt="Power Estimation Diagram" class="inline-image2">
-        <p><em>Power Estimation: 144W peak draw → 13.8 minutes of runtime</em></p>
+        <img src="assets/images/power-estimation.png" alt="Power Estimation Diagram" class="inline-image2">
+        <p><em>Power Estimation: 18 W × 8 Servos = 144 W → ~13.8 minutes of runtime</em></p>
       </div>
-
-      <p>We used these calculations early on to verify that all designs could run the required distance. This helped narrow down viable concepts before prototyping even began.</p>
     </div>
+
 
 
     <div class="bubble">
