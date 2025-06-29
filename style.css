@@ -254,7 +254,7 @@ main {
 
 .concept-flex .concept-image,
 .concept-grid > div {
-  flex: 1 1 100%;
+  flex: 1 1 45%;
   text-align: center;
 }
 
