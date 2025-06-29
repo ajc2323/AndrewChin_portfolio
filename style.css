@@ -254,7 +254,7 @@ main {
 
 .concept-flex .concept-image,
 .concept-grid > div {
-  flex: 1 1 45%;
+  flex: 1 1 100%;
   text-align: center;
 }
 
@@ -292,6 +292,7 @@ main {
   width: 100%;
   height: auto;
   display: block;
+  justify-items: center;
   margin-bottom: 8px;
 }
 
