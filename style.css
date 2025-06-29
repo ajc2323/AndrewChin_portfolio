@@ -294,3 +294,21 @@ main {
   margin: 0 auto;
 }
 
+.scale-150 img {
+  transform: scale(1.5);
+  transform-origin: center;
+}
+
+.scale-200 img {
+  transform: scale(2);
+  transform-origin: center;
+}
+
+.hover-zoom {
+  transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.15);
+  z-index: 10;
+}
