@@ -38,8 +38,33 @@
 
     <div class="bubble">
       <h3>Concept Development</h3>
-      <p>Initial concepts included Techo Gecko (bipedal), Bob the Robot (quadruped), and Bolto the Dog (quadruped). Power consumption and runtime were estimated to be 13.8 minutes at full motor load using the 3000mAh battery.</p>
+      <p>We began with three distinct robot concepts: <strong>Techo Gecko</strong> (bipedal), <strong>Bob the Robot</strong> (quadrupedal), and <strong>Bolto the Dog</strong> (quadrupedal). Each concept was evaluated for gait feasibility, stability, servo requirements, and design-for-manufacture using 3D printing constraints.</p>
+
+      <div class="image-grid-3x2">
+        <div>
+          <img src="assets/images/concept-techo-gecko.jpg" alt="Techo Gecko Concept Sketch">
+          <p><strong>Techo Gecko</strong><br>Bipedal design with dynamic balancing challenges.</p>
+        </div>
+        <div>
+          <img src="assets/images/concept-bob-robot.jpg" alt="Bob the Robot Concept Sketch">
+          <p><strong>Bob the Robot</strong><br>Quadruped with wider stance for static stability.</p>
+        </div>
+        <div>
+          <img src="assets/images/concept-bolto.jpg" alt="Bolto Concept Sketch">
+          <p><strong>Bolto the Dog</strong><br>Inspired by animal gait. Narrow profile, serial-linkage legs.</p>
+        </div>
+      </div>
+
+      <p>From the start, <strong>Bolto</strong> stood out for its biomimetic structure and efficient motion planning. Drawing inspiration from agile quadrupeds like cats, the robot’s design emphasized narrow gait spacing and a center-weighted chassis for balance during fast walking.</p>
+
+      <div class="image-bubble">
+        <img src="assets/images/power-calculation.jpg" alt="Power Estimation Diagram" class="inline-image2">
+        <p><em>Power Estimation: 144W peak draw → 13.8 minutes of runtime</em></p>
+      </div>
+
+      <p>We used these calculations early on to verify that all designs could run the required distance. This helped narrow down viable concepts before prototyping even began.</p>
     </div>
+
 
     <div class="bubble">
       <h3>Design & Inspiration</h3>
@@ -54,8 +79,7 @@
     <div class="bubble">
       <h3>Programming & Testing</h3>
       <p>Initial leg testing was done using sinusoidal motion patterns. Final code optimized these motions to achieve efficient walking. Simulation in PyBullet helped visualize gait dynamics, although some parameters were hand-tuned.</p>
-      <p><a href="https://www.youtube.com/watch?v=DTLAntTT1yI" target="_blank">Watch early leg testing</a> | <a href="https://www.youtube.com/watch?v=_3y3aoQ6nj0" target="_blank">See PyBullet Simulation</a></p>
-    </div>
+      <p><a href="https://www.youtube.com/watch?v=DTLAntTT1yI" target="_blank">Watch early leg testing</a> 
 
     <div class="bubble">
       <h3>Outcome</h3>
