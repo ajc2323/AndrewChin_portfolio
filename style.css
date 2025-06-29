@@ -297,15 +297,13 @@ main {
 /* Remove transform scale from layout sizing */
 .scale-150 img {
   width: 100%;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 400px;
   transform: none;
 }
 
 .scale-200 img {
   width: 100%;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 450px;
   transform: none;
 }
 
