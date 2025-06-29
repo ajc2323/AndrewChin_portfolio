@@ -288,7 +288,7 @@ main {
 }
 
 .full-width img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -296,14 +296,14 @@ main {
 
 /* Remove transform scale from layout sizing */
 .scale-150 img {
-  width: 150%;
-  max-width: none;
+  width: 100%;
+  max-width: 300px;
   transform: none;
 }
 
 .scale-200 img {
-  width: 200%;
-  max-width: none;
+  width: 100%;
+  max-width: 300px;
   transform: none;
 }
 
@@ -313,7 +313,7 @@ main {
 }
 
 .hover-zoom:hover {
-  transform: scale(1.1);
+  transform: scale(5);
   z-index: 10;
 }
 
