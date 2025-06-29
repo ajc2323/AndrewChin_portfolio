@@ -294,21 +294,61 @@ main {
   margin: 0 auto;
 }
 
+/* Remove transform scale from layout sizing */
 .scale-150 img {
-  transform: scale(1.5);
-  transform-origin: center;
+  width: 150%;
+  max-width: none;
+  transform: none;
 }
 
 .scale-200 img {
-  transform: scale(2);
-  transform-origin: center;
+  width: 200%;
+  max-width: none;
+  transform: none;
 }
 
+/* Hover zoom only applies on hover */
 .hover-zoom {
   transition: transform 0.3s ease;
 }
 
 .hover-zoom:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
   z-index: 10;
+}
+
+/* Optional: prevent layout overflow */
+.concept-grid > div {
+  overflow: hidden;
+}
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
 }
