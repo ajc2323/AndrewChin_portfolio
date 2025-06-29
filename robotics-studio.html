@@ -18,8 +18,9 @@
   </header>
 
   <main class="project-detail">
-    <h2>Robotics Studio Project</h2>
-    <div class="video-embed">
+    <section class="bubble">
+      <h2>Robotics Studio Project</h2>
+      <div class="video-embed">
         <iframe 
           width="560" height="315"
           src="https://www.youtube.com/embed/afBndH82s3k" 
@@ -28,6 +29,38 @@
           allowfullscreen>
         </iframe>
       </div>
+    </section>
+
+    <div class="bubble">
+      <h3>Project Overview</h3>
+      <p>Bolto is a 3D-printed quadrupedal robot designed to achieve fast and stable walking, drawing inspiration from animals such as cats. The robot was developed as part of a studio course using a Raspberry Pi 4, 8 bus servo motors, and custom SolidWorks CAD. Bolto surpassed the required gait speed of 25 cm/s with a final walking speed of 33 cm/s.</p>
+    </div>
+
+    <div class="bubble">
+      <h3>Concept Development</h3>
+      <p>Initial concepts included Techo Gecko (bipedal), Bob the Robot (quadruped), and Bolto the Dog (quadruped). Power consumption and runtime were estimated to be 13.8 minutes at full motor load using the 3000mAh battery.</p>
+    </div>
+
+    <div class="bubble">
+      <h3>Design & Inspiration</h3>
+      <p>Bolto's leg design incorporates a spherical foot for smoother walking, lightweight cutouts for reduced material use, and arc-like cable guides for better wiring management. The design ensures balance by centralizing the heaviest component, the battery.</p>
+    </div>
+
+    <div class="bubble">
+      <h3>CAD & Electronics</h3>
+      <p>CAD planning was key to housing electronic components, achieving clean wire routing, and ensuring proper motor positioning. The electronics include a Raspberry Pi connected via a BusLinker servo controller and a custom power distribution system.</p>
+    </div>
+
+    <div class="bubble">
+      <h3>Programming & Testing</h3>
+      <p>Initial leg testing was done using sinusoidal motion patterns. Final code optimized these motions to achieve efficient walking. Simulation in PyBullet helped visualize gait dynamics, although some parameters were hand-tuned.</p>
+      <p><a href="https://www.youtube.com/watch?v=DTLAntTT1yI" target="_blank">Watch early leg testing</a> | <a href="https://www.youtube.com/watch?v=_3y3aoQ6nj0" target="_blank">See PyBullet Simulation</a></p>
+    </div>
+
+    <div class="bubble">
+      <h3>Outcome</h3>
+      <p>Bolto achieved a walking speed of 33 cm/s, exceeding the project's benchmark. The project emphasized rapid prototyping, detailed CAD design, embedded programming, and systems integration—all within a two-person team.</p>
+    </div>
 
 
 
