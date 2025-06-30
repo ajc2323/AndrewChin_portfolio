@@ -284,3 +284,13 @@ main {
   cursor: pointer;
   z-index: 10000;
 }
+
+.design-bubble {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  margin: 30px auto;
+  width: 85%; /* CHANGED: from 70% to 85% */
+  max-width: 900px; /* CHANGED: from 700px to 900px */
+}
