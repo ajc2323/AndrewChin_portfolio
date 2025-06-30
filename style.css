@@ -290,7 +290,8 @@ main {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding: 25px;
-  margin: 10px auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
   width: 85%; /* CHANGED: from 70% to 85% */
   max-width: 900px; /* CHANGED: from 700px to 900px */
 }
