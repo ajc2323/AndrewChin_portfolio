@@ -294,3 +294,7 @@ main {
   width: 85%; /* CHANGED: from 70% to 85% */
   max-width: 900px; /* CHANGED: from 700px to 900px */
 }
+
+.design-bubble img{
+  justify-content: center;
+}
