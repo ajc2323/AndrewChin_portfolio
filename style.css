@@ -302,3 +302,20 @@ main {
   gap: 40px; /* NEW: adds space between the two leg images */
   flex-wrap: wrap;
 }
+
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto; /* center in bubble */
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
