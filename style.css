@@ -295,6 +295,9 @@ main {
   max-width: 900px; /* CHANGED: from 700px to 900px */
 }
 
-.design-bubble img{
+.leg-flex {
+  display: flex;
   justify-content: center;
+  gap: 40px; /* NEW: adds space between the two leg images */
+  flex-wrap: wrap;
 }
