@@ -322,4 +322,30 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* optional drop shadow */
 }
 
+/* 3x2 Grid */
+.image-grid-3x2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
+.image-grid-3x2 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.problem-grid,
+.ux-grid,
+.mechanism-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.problem-grid div,
+.ux-grid div,
+.mechanism-grid div {
+  text-align: center;
+  flex: 1 1 30%;
+}
