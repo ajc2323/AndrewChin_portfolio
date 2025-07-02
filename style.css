@@ -340,11 +340,34 @@ main {
   align-items: flex-start;
   gap: 40px;
   margin-top: 20px;
+  flex-wrap: wrap; /* ✅ ADDED to allow wrapping on smaller screens */
 }
+
+.mechanism-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* ✅ ADDED to allow wrapping on smaller screens */
+}
+
 .mechanism-grid img {
   width: 200px;
   border-radius: 12px;
 }
+
+.mechanism-item {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.mechanism-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+}
+
 
 .ux-grid {
   display: flex;
