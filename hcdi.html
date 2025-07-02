@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Compost Smart Project | Andrew Chin</title>
+  <title>Compost Smart | Andrew Chin</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,36 +18,35 @@
   </header>
 
   <main class="project-detail">
+    <a href="index.html" class="back-link">← Back to Projects</a>
+
+    <h2>Compost Smart</h2>
+    <img src="assets/images/compost-banner.jpg" alt="Compost Smart Banner" class="project-banner">
 
     <section class="bubble">
-      <h2>Compost Smart: Smart Compost Monitor</h2>
-      <p><strong>Compost Smart</strong> is a modular smart compost bin monitoring system built for community gardens. It provides real-time feedback on temperature, moisture, and pH, allowing better compost management and education. I worked as the lead hardware developer and systems integrator.</p>
+      <h3>Overview</h3>
+      <p>Compost Smart is a modular smart compost bin monitoring system built for community gardens. It provides real-time feedback on temperature, moisture, and pH, allowing better compost management and education. I led hardware development and systems integration.</p>
     </section>
 
     <section class="bubble">
       <h3>Problem Identification</h3>
-      <p>Urban gardens often lack the tools to manage compost effectively. Users may not know if their compost is too dry, too acidic, or too cold. Without this data, compost can take too long to break down or produce odors and pests.</p>
+      <p>Urban gardens often lack tools to monitor and manage compost conditions effectively. Without visibility into pH, moisture, or temperature, composting can become inefficient, odorous, or pest-prone. This project sought to improve that experience through embedded sensing and low-cost electronics.</p>
       <div class="image-row">
-        <img src="assets/images/compost-problem1.jpg" class="inline-image" alt="Community garden compost bin">
-        <img src="assets/images/compost-problem2.jpg" class="inline-image" alt="Improper compost pile">
+        <img src="assets/images/compost-problem1.jpg" class="inline-image" alt="Community Garden Bin">
+        <img src="assets/images/compost-problem2.jpg" class="inline-image" alt="Poor Compost Setup">
       </div>
     </section>
 
     <section class="bubble">
-      <h3>Research & Opportunity</h3>
-      <p>Through user interviews and observational research in NYC community gardens, we discovered a clear demand for more accessible compost monitoring tools. Our survey data showed most gardeners wanted digital insights but had limited technical expertise.</p>
-    </section>
-
-    <section class="bubble">
-      <h3>Concept & Prototyping</h3>
-      <p>We designed a sensor hub using Arduino and low-cost analog sensors (moisture, temperature, and pH). The data is displayed on a local LCD and optionally transmitted via Bluetooth.</p>
+      <h3>Design & Prototyping</h3>
+      <p>We built a low-fidelity Arduino-based monitoring unit using analog pH, temperature, and moisture sensors. Data was displayed on an LCD screen and optionally transmitted via Bluetooth for mobile logging. The design focused on modularity, weather resistance, and user-friendly operation.</p>
       <div class="image-grid-3x2">
         <div>
-          <p><strong>Sensor module</strong></p>
+          <p><strong>Sensor Module</strong></p>
           <img src="assets/images/compost-sensor-module.jpg" class="fea-image">
         </div>
         <div>
-          <p><strong>LCD UI screen</strong></p>
+          <p><strong>LCD UI Interface</strong></p>
           <img src="assets/images/compost-ui.jpg" class="fea-image">
         </div>
         <div>
@@ -55,21 +54,16 @@
           <img src="assets/images/compost-enclosure.jpg" class="fea-image">
         </div>
         <div>
-          <p><strong>Field test setup</strong></p>
+          <p><strong>Field Test</strong></p>
           <img src="assets/images/compost-field-test.jpg" class="fea-image">
         </div>
       </div>
     </section>
 
     <section class="bubble">
-      <h3>Outcomes & Reflections</h3>
-      <p>The final prototype allowed users to understand their compost pile condition with just a glance. We observed higher user engagement and fewer compost issues in monitored bins. The modular nature of the system allows for future add-ons like CO₂ sensors or LoRa transmission for remote sites.</p>
+      <h3>Impact & Learnings</h3>
+      <p>The prototype helped community gardens monitor compost conditions with ease. Gardeners reported improved compost consistency and reduced odor. Future iterations will explore CO₂ sensing and long-range data logging using LoRa. This project highlighted the value of hardware design for urban sustainability and education.</p>
     </section>
-
   </main>
-
-  <footer>
-    <p>© 2025 Andrew Chin</p>
-  </footer>
 </body>
 </html>
