@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Human-Centered Design: Sustainability Project</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Compost Smart Project | Andrew Chin</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -12,23 +12,64 @@
     <nav>
       <a href="index.html">Projects</a> |
       <a href="about.html">About</a> |
-      <a href="#contact">Contact</a> |
-      <a href="assets/AndrewChin_Resume.pdf" download>Resume</a>
+      <a href="contact.html">Contact</a> |
+      <a href="assets/AndrewChin_Resume.pdf" target="_blank">Resume</a>
     </nav>
   </header>
 
   <main class="project-detail">
-    <h2>Human-Centered Design: Sustainability Project</h2>
-    <img src="assets/images/hcdi-thumbnail.jpg" alt="HCDI Sustainability Project" class="project-banner">
-    <p>
-      As part of Columbia's Human-Centered Design & Innovation course, my team and I tackled the challenge of reducing plastic waste in consumer packaging.
-      Through user interviews, environmental impact mapping, and design research, we identified key opportunities to improve sustainability in everyday habits. 
-      We developed a prototype of a modular, reusable refill station designed for high-traffic urban environments. 
-      I focused on the physical design and prototyping of the refill unit, using CAD modeling and iterative feedback from user testing to refine usability. 
-      The project emphasized systems thinking, empathy-driven design, and lifecycle sustainability.
-    </p>
 
-    <a href="index.html" class="back-link">← Back to Projects</a>
+    <section class="bubble">
+      <h2>Compost Smart: Smart Compost Monitor</h2>
+      <p><strong>Compost Smart</strong> is a modular smart compost bin monitoring system built for community gardens. It provides real-time feedback on temperature, moisture, and pH, allowing better compost management and education. I worked as the lead hardware developer and systems integrator.</p>
+    </section>
+
+    <section class="bubble">
+      <h3>Problem Identification</h3>
+      <p>Urban gardens often lack the tools to manage compost effectively. Users may not know if their compost is too dry, too acidic, or too cold. Without this data, compost can take too long to break down or produce odors and pests.</p>
+      <div class="image-row">
+        <img src="assets/images/compost-problem1.jpg" class="inline-image" alt="Community garden compost bin">
+        <img src="assets/images/compost-problem2.jpg" class="inline-image" alt="Improper compost pile">
+      </div>
+    </section>
+
+    <section class="bubble">
+      <h3>Research & Opportunity</h3>
+      <p>Through user interviews and observational research in NYC community gardens, we discovered a clear demand for more accessible compost monitoring tools. Our survey data showed most gardeners wanted digital insights but had limited technical expertise.</p>
+    </section>
+
+    <section class="bubble">
+      <h3>Concept & Prototyping</h3>
+      <p>We designed a sensor hub using Arduino and low-cost analog sensors (moisture, temperature, and pH). The data is displayed on a local LCD and optionally transmitted via Bluetooth.</p>
+      <div class="image-grid-3x2">
+        <div>
+          <p><strong>Sensor module</strong></p>
+          <img src="assets/images/compost-sensor-module.jpg" class="fea-image">
+        </div>
+        <div>
+          <p><strong>LCD UI screen</strong></p>
+          <img src="assets/images/compost-ui.jpg" class="fea-image">
+        </div>
+        <div>
+          <p><strong>Enclosure CAD</strong></p>
+          <img src="assets/images/compost-enclosure.jpg" class="fea-image">
+        </div>
+        <div>
+          <p><strong>Field test setup</strong></p>
+          <img src="assets/images/compost-field-test.jpg" class="fea-image">
+        </div>
+      </div>
+    </section>
+
+    <section class="bubble">
+      <h3>Outcomes & Reflections</h3>
+      <p>The final prototype allowed users to understand their compost pile condition with just a glance. We observed higher user engagement and fewer compost issues in monitored bins. The modular nature of the system allows for future add-ons like CO₂ sensors or LoRa transmission for remote sites.</p>
+    </section>
+
   </main>
+
+  <footer>
+    <p>© 2025 Andrew Chin</p>
+  </footer>
 </body>
 </html>
