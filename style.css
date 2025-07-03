@@ -330,6 +330,7 @@ main {
   gap: 20px;
   justify-items: center;
   align-items: start;
+  text-justify: center;
 }
 
 .image-grid-3x2 img {
