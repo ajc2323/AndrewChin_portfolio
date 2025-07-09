@@ -404,42 +404,52 @@ main {
   border-radius: 12px;
 }
 
-.compostsmart-layout {
+/* for the social media hcdi protoype portion */
+
+.compostsmart-prototype {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  margin-top: 20px;
 }
 
-.gif-container {
-  text-align: center;
+.gif-center {
+  width: 300px;
+  border-radius: 16px;
+  z-index: 1;
 }
 
-.rounded-gif {
-  width: 280px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+.side-img {
+  position: absolute;
+  top: 50%;
+  width: 150px;
+  border-radius: 16px;
+  z-index: 0;
 }
 
-.img-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
+.left-img {
+  left: 0;
+  transform: translate(-60%, -50%);
 }
 
-.proto-img {
-  text-align: center;
+.right-img {
+  right: 0;
+  transform: translate(60%, -50%);
 }
 
-.proto-image {
+.bottom-img {
   width: 200px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
 }
 
-.caption {
-  margin-top: 8px;
+.bottom-caption {
+  margin-top: 180px;
+  text-align: center;
+}
+
+.image-caption {
+  font-style: italic;
   font-size: 0.9em;
-  color: #333;
+  margin-top: 8px;
 }
