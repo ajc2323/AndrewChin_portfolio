@@ -404,9 +404,6 @@ main {
   border-radius: 12px;
 }
 
-/* for the social media hcdi protoype portion */
-
-/* CompostSmart Layout Section */
 /* CompostSmart Section Styles */
 .compostsmart-layout {
   padding: 40px 20px;
@@ -424,14 +421,15 @@ main {
 }
 
 .gif-row {
-  margin-bottom: 10px; /* Tight gap between GIF and IMG2 row */
+  margin-bottom: 20px; /* push GIF slightly away from row below */
 }
 
 .middle-row {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 50px;
-  transform: translateY(-50%); /* Shift up so that IMG1/IMG3 align between GIF and IMG2 */
+  margin-top: 40px; /* move full row down so GIF and IMG2 don’t touch */
 }
 
 .proto-img {
@@ -441,7 +439,7 @@ main {
 
 .proto-image,
 .rounded-gif {
-  width: 320px;
+  width: 320px;   /* uniform size for all */
   max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
