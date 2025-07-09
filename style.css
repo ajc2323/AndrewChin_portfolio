@@ -453,3 +453,21 @@ main {
   font-size: 0.9em;
   margin-top: 8px;
 }
+
+.center-column {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.three-image-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.three-image-cluster .proto-img {
+  width: 220px;
+  text-align: center;
+}
+
