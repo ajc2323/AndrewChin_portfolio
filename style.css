@@ -430,17 +430,17 @@ main {
 
 .proto-img {
   text-align: center;
-  max-width: 300px;
+  max-width: 250px;
 }
 
 .proto-image {
-  width: 300px;
+  width: 250px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .rounded-gif {
-  width: 300pxpx;
+  width: 250px;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
