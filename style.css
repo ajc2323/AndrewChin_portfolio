@@ -418,45 +418,44 @@ main {
 }
 
 .plus-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  display: grid;
+  grid-template-areas:
+    "left gif right"
+    ". bottom .";
+  grid-template-columns: 1fr auto 1fr;
+  justify-items: center;
+  align-items: start;
+  gap: 40px 60px;
   margin-top: 30px;
 }
 
-.row-top {
-  display: flex;
-  justify-content: center;
+.left {
+  grid-area: left;
+  margin-top: 60px;
 }
 
-.row-middle {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 800px;
-  margin-top: -60px; /* pull up the left/right images */
-}
-
-.left,
 .right {
-  width: 200px;
+  grid-area: right;
+  margin-top: 60px;
 }
 
-.row-bottom {
-  display: flex;
-  justify-content: center;
+.gif {
+  grid-area: gif;
 }
 
-.proto-img {
+.bottom {
+  grid-area: bottom;
+}
+
+.proto-img,
+.gif {
   text-align: center;
 }
 
 .proto-image,
 .rounded-gif {
-  width: 100%;
-  max-width: 280px;
+  width: 320px;
+  max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -470,3 +469,4 @@ main {
   font-size: 0.95em;
   color: #444;
 }
+
