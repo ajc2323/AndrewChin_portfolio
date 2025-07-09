@@ -410,43 +410,37 @@ main {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 40px;
   text-align: center;
 }
 
-.plus-container {
+.plus-format {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.vertical-stack {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px; /* small gap between gif and img2 */
 }
 
-.gif-row {
-  margin-bottom: 20px; /* push GIF slightly away from row below */
-}
-
-.middle-row {
+.side-image {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 50px;
-  margin-top: 40px; /* move full row down so GIF and IMG2 don’t touch */
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 50px; /* raises images slightly to align with center of vertical stack */
 }
 
-.proto-img {
-  text-align: center;
-  max-width: 300px;
-}
-
-.proto-image,
-.rounded-gif {
-  width: 320px;   /* uniform size for all */
+.proto-image {
+  width: 280px;
   max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.rounded-gif {
-  border-radius: 20px;
 }
 
 .caption {
