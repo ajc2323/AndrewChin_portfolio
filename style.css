@@ -414,45 +414,49 @@ main {
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 40px;
+  text-align: center;
 }
 
 .plus-grid {
-  display: grid;
-  grid-template-areas:
-    "left gif right"
-    ". bottom .";
-  grid-template-columns: 1fr auto 1fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 30px 50px;
+  gap: 20px;
   margin-top: 30px;
 }
 
-.left {
-  grid-area: left;
+.row-top {
+  display: flex;
+  justify-content: center;
 }
 
+.row-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+  margin-top: -60px; /* pull up the left/right images */
+}
+
+.left,
 .right {
-  grid-area: right;
+  width: 200px;
 }
 
-.gif {
-  grid-area: gif;
+.row-bottom {
+  display: flex;
+  justify-content: center;
 }
 
-.bottom {
-  grid-area: bottom;
-}
-
-.proto-img,
-.gif {
+.proto-img {
   text-align: center;
 }
 
 .proto-image,
 .rounded-gif {
-  width: 320px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 280px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
