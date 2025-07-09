@@ -406,15 +406,14 @@ main {
 
 /* for the social media hcdi protoype portion */
 
+./* CompostSmart Layout Section */
+
 .compostsmart-layout {
   padding: 40px 20px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 40px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .plus-grid {
@@ -423,49 +422,43 @@ main {
     "left gif right"
     ". bottom .";
   grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: auto auto;
   justify-items: center;
   align-items: center;
   gap: 30px 50px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .left {
   grid-area: left;
 }
 
-.gif {
-  grid-area: gif;
-}
-
 .right {
   grid-area: right;
+}
+
+.gif {
+  grid-area: gif;
 }
 
 .bottom {
   grid-area: bottom;
 }
 
-
-.rounded-gif {
-  max-width: 320px;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.proto-img:nth-child(1) { grid-area: img1; }
-.proto-img:nth-child(2) { grid-area: img2; }
-.proto-img:nth-child(3) { grid-area: img3; }
-
-.proto-img {
+.proto-img,
+.gif {
   text-align: center;
-  max-width: 220px;
 }
 
-.proto-image {
-  width: 320px; /* increase if needed */
+.proto-image,
+.rounded-gif {
+  width: 320px;
+  max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-gif {
+  border-radius: 20px;
 }
 
 .caption {
@@ -473,5 +466,3 @@ main {
   font-size: 0.95em;
   color: #444;
 }
-
-
