@@ -489,10 +489,55 @@ main {
   display: block;
 }
 
-
 .art-desc {
   font-size: 0.95em;
   color: #444;
   text-align: left;
   margin-top: 10px;
+}
+
+/* for the last two sections of compostsmar prototype */
+
+.compostsmart-section {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 60px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sub-bubble-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 30px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.bubble-card {
+  text-align: center;
+  max-width: 250px;
+  margin: 20px;
+}
+
+.bubble-card img,
+.bubble-card video {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.bubble-card h4 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.bubble-card p {
+  font-size: 0.95em;
+  color: #333;
 }
