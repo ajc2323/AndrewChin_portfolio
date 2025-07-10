@@ -456,22 +456,6 @@ main {
 /* end of plus grid section for prototype */
 
 /* Prior Art Table Formatting */
-
-.prior-art-section {
-  padding: 40px 20px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 60px;
-  text-align: center;
-}
-
-.prior-art-section h3 {
-  text-align: center;
-  font-size: 1.8em;
-  margin-bottom: 30px;
-}
-
 .prior-art-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
