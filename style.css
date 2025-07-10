@@ -482,10 +482,13 @@ main {
 }
 
 .art-image {
-  max-width: 80%;
-  height: auto;
-  margin: 10px 0;
+  width: 260px;
+  height: 150px;
+  object-fit: contain;
+  margin: 10px auto;
+  display: block;
 }
+
 
 .art-desc {
   font-size: 0.95em;
