@@ -578,6 +578,7 @@ main {
 .vibration-top {
   display: flex;
   justify-items: center;
+  align-items: center;
   margin-bottom: 40px;
 }
 
