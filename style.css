@@ -541,3 +541,20 @@ main {
   font-size: 0.95em;
   color: #333;
 }
+
+/* vibration motor */
+
+.gif-split-center {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.wide-gif {
+  width: 100%;
+  max-width: 360px; /* Larger than before */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
