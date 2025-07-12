@@ -588,3 +588,13 @@ main {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
+
+.vibration-top-content {
+  text-align: center;
+}
+
+.vibration-caption {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #444;
+}
