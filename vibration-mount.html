@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Modular Vibration Motor Mount</title>
+  <title>Vibration Isolation Mount | Andrew Chin</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,19 +12,65 @@
     <nav>
       <a href="index.html">Projects</a> |
       <a href="about.html">About</a> |
-      <a href="#contact">Contact</a> |
-      <a href="assets/AndrewChin_Resume.pdf" download>Resume</a>
+      <a href="contact.html">Contact</a> |
+      <a href="assets/AndrewChin_Resume.pdf" target="_blank">Resume</a>
     </nav>
   </header>
 
   <main class="project-detail">
-    <h2>Modular Vibration Motor Mount</h2>
-    <img src="assets/images/PROJECT-IMAGE.jpg" alt="Project Preview" class="project-banner">
-    <p>
-      PROJECT DESCRIPTION: Explain the problem, your solution, your contributions, tools used (CAD, FEA, prototyping, etc.), and final outcome.
-    </p>
+    <h2>Vibration Isolation Mount</h2>
+    <img src="assets/images/vibration-mount-banner.jpg" alt="Vibration Isolation Mount" class="project-banner" />
 
-    <a href="index.html" class="back-link">← Back to Projects</a>
+    <section class="bubble">
+      <h3>Problem & Design Objective</h3>
+      <p>
+        Excessive vibration in precision equipment can lead to mechanical wear, signal noise, and reduced performance. This project focused on developing a compact, modular vibration isolation mount for sensitive devices. The goal was to design a solution that is lightweight, easily integrated, and capable of damping low-frequency vibrations.
+      </p>
+    </section>
+
+    <section class="bubble">
+      <h3>Design Exploration</h3>
+      <div class="concept-flex">
+        <div class="concept-image">
+          <img src="assets/images/vibration-sketches.png" alt="Sketches" />
+          <p>Initial sketch concepts focused on elastomer-based damping and geometric flexibility.</p>
+        </div>
+        <div class="concept-image">
+          <img src="assets/images/vibration-3dprint.png" alt="3D Print" />
+          <p>Rapid prototyping was used to evaluate spring-damper pair configurations and compression characteristics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bubble">
+      <h3>CAD & Simulation</h3>
+      <div class="cad-layout">
+        <img src="assets/images/vibration-cad.png" alt="CAD Model" class="cad-electronics-image" />
+        <p>CAD design of the mount using SolidWorks with dynamic simulation to test modal frequencies and deformation profiles under load.</p>
+      </div>
+    </section>
+
+    <section class="bubble">
+      <h3>Fabrication & Testing</h3>
+      <div class="leg-subsection">
+        <div class="leg-images">
+          <img src="assets/images/vibration-test1.jpg" alt="Test Setup 1" />
+          <img src="assets/images/vibration-test2.jpg" alt="Test Setup 2" />
+        </div>
+        <p>Testing was conducted with accelerometer feedback to validate performance across a range of frequencies and weights.</p>
+      </div>
+    </section>
+
+    <section class="bubble">
+      <h3>Results & Reflections</h3>
+      <p>
+        The final mount reduced transmitted vibration by over 60% in the target frequency range (10–80 Hz). Its modularity allows adaptation to various devices, and future iterations may include tunable damping using magnetorheological fluid or smart elastomers.
+      </p>
+    </section>
+
+    <div style="margin-top: 40px;">
+      <a href="index.html">← Back to Projects</a>
+    </div>
   </main>
 </body>
 </html>
