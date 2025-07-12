@@ -559,10 +559,17 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.vibration-top-image {
+.vibration-top {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+.vibration-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .vibration-top-image img {
@@ -572,12 +579,6 @@ main {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.vibration-bottom-row {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
 
 .vibration-bottom-row img {
   width: 100%;
