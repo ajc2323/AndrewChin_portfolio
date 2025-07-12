@@ -559,49 +559,32 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.vibration-section {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 40px 20px;
-  background-color: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  text-align: center;
-}
-
-.vibration-title {
-  font-size: 1.8em;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-.vibration-top {
+.vibration-top-wrapper {
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .vibration-top-image {
-  max-width: 320px;
-  width: 100%;
+  width: 320px;
   height: auto;
   border-radius: 12px;
-  justify-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.vibration-bottom-row {
+.vibration-bottom-wrapper {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
 .vibration-bottom-image {
   max-width: 300px;
-  width: auto;
+  width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
