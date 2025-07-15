@@ -637,18 +637,3 @@ main {
   object-fit: cover;
 }
 
-.vibration-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  color: #444;
-  margin-top: 30px;
-}
-
-.arrow-symbol {
-  font-size: 6rem; /* make arrow much bigger */
-  color: #444;
-  line-height: 1;
-}
-
