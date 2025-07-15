@@ -607,8 +607,8 @@ main {
   align-items: flex-start;
   gap: 60px;
   flex-wrap: wrap;
-  border: 2px solid #e0e0e0;
-  border-radius: 20px;
+  /* border: 2px solid #e0e0e0;
+  border-radius: 20px; */
   padding: 30px 20px;
   margin-top: 20px;
 }
@@ -645,3 +645,10 @@ main {
   color: #444;
   margin-top: 30px;
 }
+
+.arrow-symbol {
+  font-size: 6rem; /* make arrow much bigger */
+  color: #444;
+  line-height: 1;
+}
+
