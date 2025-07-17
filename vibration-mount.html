@@ -5,6 +5,23 @@
   <title>Vibration Isolation Mount | Andrew Chin</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
+<div class="floating-sidebar">
+  <ul>
+    <li><a href="#myhand-rlx">MyHand-RLX</a></li>
+    <li><a href="#myhand-orthosis-robot">MyHand Orthosis Robot</a></li>
+    <li><a href="#patient-usage">Patient Usage</a></li>
+    <li><a href="#incorp-vibe">Incorporating Vibration</a></li>
+    <li><a href="#refine-integ">Refining the Vibration Motor Integration</a></li>
+    <li><a href="#vibe-motor-mount">Modular Vibration Motor Mount</a></li>
+    <li><a href="#design-intent">Design Intent</a></li>
+    <li><a href="#protoboard">Cartridge-Like Protoboard</a></li>
+    <li><a href="#local-hub">Local Connection Hub</a></li>
+    <li><a href="#elastic-band">Adjustable Elastic Vibration Motor Band</a></li>
+  </ul>
+</div>
+
+
 <body>
   <header>
     <h1>Andrew Chin</h1>
@@ -19,7 +36,7 @@
 
   <main class="project-detail">
     <section class="bubble">
-      <h2>MyHand-RLX</h2>
+      <h2 id="myhand-rlx">MyHand-RLX</h2>
       <img src="assets/images/vibe-motor/full-robot-assem.png" alt="Vibration Isolation Mount" class="project-banner"/>
       <p>
         The MyHand-RLX incorporates small scale vibration motors into the MyHand Robot.
@@ -30,7 +47,7 @@
     </section>
 
     <section class="bubble">
-      <h2>The MyHand Orthosis Robot</h2>
+      <h2 id="myhand-orthosis-robot">The MyHand Orthosis Robot</h2>
       <img src="assets/images/vibe-motor/myhand.gif" alt="MyHand Robot Action" class="hero-image"/>
       <p>
         The MyHand Orthosis Robot is a stroke rehabilitative device which allows patients 
@@ -41,7 +58,7 @@
       </p>
 
       <div class="bubble">
-        <h3>Patient Usage</h3>
+        <h3 id="patient-usage">Patient Usage</h3>
         <p>
           Stroke patients often experience high levels of spcticity in their hands where the muscles within 
           the hand and arm become extremely stiff. This causes involuntary contraction leading to clenched fists, limited finger movement 
@@ -56,7 +73,7 @@
     </section>
 
     <section class="bubble">
-      <h2>Incorporating Vibration</h2>
+      <h2 id="incorp-vibe">Incorporating Vibration</h2>
       <p>
         With their Touché Glove, the Stanfrod CHARM lab demonstrated that vibration pulses applied at random intervals and periods worked to 
         provide patients with spacticity relief. In partnership with the CHARM lab, we worked to incorporate the glove's vibration 
@@ -83,7 +100,7 @@
     </section>
 
     <section class="bubble">
-      <h2>Refining the Vibration Motor Integration</h2>
+      <h2 id="refine-integ">Refining the Vibration Motor Integration</h2>
 
       <p>
         Version 2 worked to localize a single vibration motor to each finger, as well as, integrate the motors within the straps used to bind the robot to the patients' hand. 
@@ -122,13 +139,13 @@
 
 
     <section class="bubble">
-      <h2>Modular Vibration Motor Mount</h2>
+      <h2 id="vibe-motor-mount">Modular Vibration Motor Mount</h2>
       <img src="assets/images/vibe-motor/VibrationMotorAssem.gif" alt="CAD Assembly GIF" class="hero-image">
 
      
       <div class="bubble">
 
-        <h3>Design Intent</h3>
+        <h3 id="design-intent">Design Intent</h3>
         <p>
           To create a robust modular mounting system for the vibration motors, 3 new features were designed and implemented:
         </p>
@@ -141,7 +158,7 @@
       </div>
 
       <div class="bubble">
-        <h3>Cartridge-Like Protoboard</h3>
+        <h3 id="protoboard">Cartridge-Like Protoboard</h3>
         <p>
           I devised a cartidge-like protoboard to allow for the seamless integration of the vibration motors within the overall robot. 
           For this, I designed and constructed a custom protoboard with four 2-pin female connectors to which the vibration motors attach. 
@@ -179,7 +196,7 @@
 
       <div class="bubble">
 
-        <h3>Local Connection Hub</h3>
+        <h3 id="local-hub">Local Connection Hub</h3>
 
         <p>
           A centralized local hub was implemented to organize and streamline connections between the vibration motors and their controller. 
@@ -203,7 +220,7 @@
     </section>
 
     <section class="bubble">
-      <h3>Adjustable Elastic Vibration Motor Bands</h3>
+      <h3 id="elastic-band">Adjustable Elastic Vibration Motor Bands</h3>
       <p>
         The old bands which mounted the vibration motors to the finger featured a lack of  
         adjustability and felxibility, resulting in prolonged assembly times. Closed loop elastic bands required the vibration motors to 
