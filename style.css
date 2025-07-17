@@ -653,3 +653,20 @@ main {
   object-fit: cover;
 }
 
+/* vibration motor cartridge cad images */
+
+.centered-image-pair {
+  display: flex;
+  justify-content: center;     /* Centers the pair as a group */
+  align-items: center;
+  gap: 40px;                    /* Space between the two images */
+  margin: 60px 0;
+  flex-wrap: wrap;              /* Allow wrapping on smaller screens */
+}
+
+.centered-image-pair img {
+  width: 420px;
+  height: auto;
+  border-radius: 12px;          /* Optional beveling */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional light shadow */
+}
