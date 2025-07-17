@@ -156,7 +156,7 @@ main {
 
 .inline-image3 {
   width: 100%;
-  max-height: 300px;
+  max-width: 500px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
