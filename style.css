@@ -542,6 +542,15 @@ main {
   color: #333;
 }
 
+.bubble-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 40px 0;
+}
+
 /* vibration motor */
 
 .gif-split-center {
