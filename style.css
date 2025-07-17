@@ -671,8 +671,10 @@ main {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional light shadow */
 }
 
-.captioned-bubble {
-  text-align: center;
+.image-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image-caption.bubble {
@@ -681,7 +683,7 @@ main {
   padding: 8px 16px;
   margin-top: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  display: inline-block;
   font-size: 0.95em;
   color: #333;
+  white-space: nowrap;
 }
