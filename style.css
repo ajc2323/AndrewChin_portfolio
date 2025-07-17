@@ -761,3 +761,18 @@ main {
   margin-bottom: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.sidebar-group {
+  background-color: #f0f0f0; /* soft gray */
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 14px;
+}
+
+.floating-sidebar a.muted-blue {
+  background-color: #dceaf7;
+}
+
+.floating-sidebar a.muted-blue:hover {
+  background-color: #c8def0;
+}
