@@ -10,15 +10,8 @@
   <div class="sidebar-title">Navigation Bar</div>
   <ul>
     <li><a href="#trakstar-overview">Trakstar Sensor Characterization</a></li>
-    <li><a href="#sensor-principle">Sensor Principle</a></li>
-    <li>
-      <a href="#system-integration">System Integration</a>
-      <ul>
-        <li><a href="#design-approach">Design Approach</a></li>
-        <li><a href="#sensor-housing">Sensor Housing</a></li>
-        <li><a href="#pcb-integration">PCB Integration</a></li>
-      </ul>
-    </li>
+    <li><a href="#trakstar-sensors">The Trakstar Sensors</a></li>
+    <li><a href="#Problem Statement">Problem Statement</a></li>
     <li><a href="#testing-evaluation">Testing & Evaluation</a></li>
   </ul>
 </div>
@@ -43,17 +36,17 @@
         </div>
             
         <p>
-            As part of the ROAM Lab at Columbia, within the Myhand Orthosis Robot project, cx I characterized and assessed the accuracy of trakstar sensor performance within close proximity of one another. 
+            As part of the ROAM Lab at Columbia University, within the Myhand Orthosis Robot project, cx I characterized and assessed the accuracy of trakstar sensor performance within close proximity of one another. 
             Through my experimentation and data analysis, utilizing ROS, RViz and Python within a Linux environment, I was able to identify a configuration of trakstar sensors which not only decreased the 
             sensor footprint within the MyHand Robot by 75% and improve joint angle reporting accuracy to within 5 degrees.
         </p>
     </section>
 
     <section class="bubble">
-      <h2 id="sensor-principle">The Trakstar Sensors</h2>
+      <h2 id="trakstar-sensors">The Trakstar Sensors</h2>
 
       <p>
-        The trakstar sensors are electromagnetic 6DOF tracking sensor that offer higher accuracy and precision over commonly used imu’s as they measure position 
+        The trakstar sensors are small scale electromagnetic 6DOF tracking sensors that offer higher accuracy and precision over commonly used imu’s as they measure position 
         and orientation without the presence of drift. 
       </p>
 
@@ -62,7 +55,7 @@
       </div>
 
       <p> 
-        These sensors recording and publish their position and orientation in the form of transforms within ROS to the TF topic relative to the trakstar base. 
+        These sensors record and publish their position and orientation within ROS to the TF Topic in the form of transforms relative to the trakstar base. 
         The images shown here depict the actual position and orientation of the sensors as well as their the transforms visualized in Rviz. 
         By reading in the transforms of each sensor we are able to calculate the relative angles between trakstar0 and trakstar1 and trakstar1 and trakstar2. 
       </p>
@@ -77,17 +70,30 @@
           <p class="image-caption bubble">RViz TF Vsualization</p>
         </div>
       </div>
+    
 
-
-      <p>
-        With their small form factor they can easily be integrated within the MyHand Robot system. 
-      </p>        
-
-      
     </section>
 
     <section class="bubble">
-      <h2 id="system-integration">System Integration</h2>
+      <h2 id="Problem Statement">Problem Statement</h2>
+
+      <p>
+        There are 3 problem areas/questions that need to be addressed and explored:
+        <ul>
+          <li>
+            The trakstar sensors are accurate when used individually. But do they exhibit the same level of accuracy 
+            when multiple sensors are used in close proximity to one another?
+          </li>
+          <li>
+            There are multiple trakstar sensors of varying sizes that can be used. What combination of the sensors 
+            provides the optimal balance of overall form factor and accuracy?
+          </li>
+          <li>
+            How will these sensors be integrated into the MyHand Orthosis Robot that streamlines assembly and does not 
+            negatively affect robot functionality?
+          </li>
+        </ul>
+      </p>
 
       <div class="bubble">
         <h3 id="design-approach">Design Approach</h3>
