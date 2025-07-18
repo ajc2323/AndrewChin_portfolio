@@ -84,8 +84,12 @@
     <section class="bubble">
       <h2 id="sensor-research">Smart Bra Custom Test Jigs</h2>
       <p>
-        
+        To evaluate strain sensor performance, I designed a custom jig where one end of the sensor was zip-tied to a fixed metal base and the other to the retractable piston of a linear actuator. 
+        Care was taken to ensure the sensor remained taut without pre-strain. The linear actuator, powered and controlled by an Arduino Uno and motor driver, retracted at a constant 10 mm/s, elongating the sensor over time. 
+        A simple voltage divider circuit enabled real-time voltage readings across the sensor, captured via the Arduino’s analog pin and converted from raw values to voltages within the sketch. Simultaneously, elongation was 
+        calculated based on elapsed time and actuator velocity, providing a continuous mapping of strain to output voltage. Both datasets were logged in tandem for downstream analysis.
       </p>
+
       <div class="bubble">
         <h3 id="strain-jig">Strain Jig Design & Protocol</h3>
 
@@ -96,14 +100,21 @@
       <div class="bubble">
         <h3 id="pressure-jig">Pressure Jig Design & Protocol</h3>
 
+        <p>
+          To characterize pressure sensor performance, I developed a custom test jig featuring a linear actuator, syringe, and water receptacle to apply a controlled compressive load. 
+          As the actuator extends, water is displaced from the syringe into the receptacle, exerting a load on the pressure sensor; retraction removes the load. A load cell placed beneath the 
+          sensor serves as a ground truth reference, capturing the actual force applied. Using an Arduino Uno, I controlled the actuator’s motion and simultaneously logged real-time load cell 
+          data and pressure sensor voltage outputs. This setup enabled continuous cycling and synchronized data collection for downstream analysis.
+        </p>
+
         <div class="image-bubble">
           <img src="assets/images/lilu/pressure-jig.png" alt="Pressure Jig" class="cad-electronics-image">
         </div>
       </div>
 
-      <div class="image-bubble">
-        <img src="assets/images/smart-bra/sensor-samples.png" alt="Sensor Samples" class="cad-electronics-image"/>
-      </div>
+      
+      <img src="assets/images/smart-bra/sensor-samples.png" alt="Sensor Samples" class="hero-image"/>
+      
 
       <div class="bubble">
         <h3 id="sensor-eval">Sensor Evaluation & Testing</h3>
