@@ -15,6 +15,7 @@
     <li><a href="#prob-stat">Problem Statement</a></li>
     <li><a href="#testing-accuracy">Characterizing Trakstar Accuracy</a></li>
     <li><a href="#optimal-config">Optimal Sensor Configuration</a></li>
+    <li><a href="#sensor-integration">Trakstar-MyHand Integration</a></li>
   </ul>
 </div>
 
@@ -171,25 +172,51 @@
       
         <p>
           Looking at both the error and form factor of the individual sensors within each configuration, it was clear that the Cylindrical - Pill-Like - Pill-Like configuraion 
-          would provide the most accurate results while minimizing the sensor footpring within the robot.
+          would provide the most accurate results while minimizing the sensor footprint within the robot. Overall this reduced the sensor footprint by 75% leading to a cleaner assembly 
+          and more reliable data collection.
         </p>
 
         <div class="image-bubble">
          <img src="assets/images/trakstar/optimal-sensor-config.png" alt="Optimal Sensor Configuration" class="cad-electronics-image">
         </div>
-
+      </div>  
 
 
 
       <div class="bubble">
-        <h3 id="pcb-integration">PCB Integration</h3>
+        <h3 id="sensor-integration">Trakstar-MyHand Integration</h3>
         <p>
-          [Explain how the Trakstar system interfaces with a custom PCB or existing electronics, including connector routing or shielding.]
+          To incorporate the sensors into the MyHand Orthosis Robot I designed custom mounts within SolidWorks to be FDM printed for assembly. 
+          
         </p>
-        <div class="image-bubble">
-          <img src="assets/images/trakstar/pcb-cad.png" alt="PCB Integration" class="cad-electronics-image">
+        <div class="bubble">
+          <h4 id="pip-sensor-mount">PIP Sensor Mount</h4>
+          
+          <p>
+            The PIP sensor mount had 4 main design constraints:
+            <ul>
+              <li>The mount needed to fit the small scale dimensions of the PIP segment.</li>
+              <li>The mount needed to function as a finger splint between the PIP and DIP segments.</li>
+              <li>The mount needed to hold the Futek load cell and the Pill-Like trakstar sensor.</li>
+              <li>The Futek load cell and Pill-Like trakstar sensor had to be easily assembled and disassembled form the mount for maintenance.</li>
+            </ul>
+          </p>
+
+          <p>
+            To solve this issue I designed a 3-component splint mount assembly balancing ease of assembly and a minamalist design. 
+            The Futek load cell is first inserted into the splint body and fixed in place with a set screw. The Pill-Like trakstar sensor holder component 
+            then slots into the splint body of the mount and is fixed with a locking pin. The trakstar sensor sits within its designated slot within its holder 
+            and is fixed in position and orientation by a plastic set screw.
+          </p>
+
+          <div class="image-bubble">
+            <img src="assets/images/trakstar/pip-finger-splint.gif" alt="PIP Finger Splint Mount" class-="cad-electronics-image">
+          </div>
+
+
         </div>
       </div>
+    
     </section>
 
     <section class="bubble">
