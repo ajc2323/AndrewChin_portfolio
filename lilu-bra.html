@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Smart Sensing Bra – Lilu Inc.</title>
+  <title>Smart Sensing Bra | Andrew Chin</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
+<div class="floating-sidebar">
+  <div class="sidebar-title">Navigation Bar</div>
+  <ul>
+    <div class="sidebar-group">
+      <li><a href="#bra-overview">Smart Sensing Bra Overview</a></li>
+    </div>
+    <div class="sidebar-group">
+      <li><a href="#sensor-research">Sensor Research & Selection</a></li>
+      <li><a href="#sensor-eval" class="muted-blue">Sensor Evaluation & Testing</a></li>
+    </div>
+    <div class="sidebar-group">
+      <li><a href="#test-jigs">Custom Test Jigs</a></li>
+    </div>
+    <div class="sidebar-group">
+      <li><a href="#integration">Integration Into Bra System</a></li>
+    </div>
+  </ul>
+</div>
+
 <body>
   <header>
     <h1>Andrew Chin</h1>
@@ -12,18 +32,84 @@
     <nav>
       <a href="index.html">Projects</a> |
       <a href="about.html">About</a> |
-      <a href="#contact">Contact</a> |
-      <a href="assets/AndrewChin_Resume.pdf" download>Resume</a>
+      <a href="contact.html">Contact</a> |
+      <a href="assets/AndrewChin_Resume.pdf" target="_blank">Resume</a>
     </nav>
   </header>
 
   <main class="project-detail">
-    <h2>Smart Sensing Bra – Lilu Inc.</h2>
-    <img src="assets/images/lilu-bra-banner.jpg" alt="Smart Sensing Bra" class="project-banner">
-    <p>
-      At Lilu, I developed a smart bra prototype that integrates pressure sensors to monitor lactation. I researched, sourced, and tested a range of flexible sensors, designed test jigs, and created circuits using Arduino, amplifiers, and filters. The goal was to find a sensor that provided reliable pressure data during pumping without compromising comfort or wearability.
-    </p>
-    <a href="index.html" class="back-link">← Back to Projects</a>
+    <section class="bubble">
+      <h2 id="bra-overview">Smart Sensing Bra Overview</h2>
+      <div class="image-bubble">
+        <img src="assets/images/smart-bra/bra-overview.png" alt="Smart Bra Overview" class="cad-electronics-image"/>
+      </div>
+      <p>
+        As a product engineer at Lilu Inc., I worked on the early-stage development of a Smart Sensing Bra system intended to detect pressure and strain signals during lactation.
+        This system was designed to collect real-time feedback to help guide massage functionality and improve user experience.
+      </p>
+    </section>
+
+    <section class="bubble">
+      <h2 id="sensor-research">Sensor Research & Selection</h2>
+      <p>
+        I led an in-depth investigation into flexible pressure and strain sensors suited for wearable integration.
+        Options included piezoresistive and capacitive films, textile-based sensors, and off-the-shelf modules.
+        Key evaluation criteria included flexibility, repeatability, response time, and robustness during dynamic use.
+      </p>
+
+      <div class="image-bubble">
+        <img src="assets/images/smart-bra/sensor-samples.png" alt="Sensor Samples" class="cad-electronics-image"/>
+      </div>
+
+      <div class="bubble">
+        <h3 id="sensor-eval">Sensor Evaluation & Testing</h3>
+        <p>
+          I designed test protocols and circuits using Arduino microcontrollers to benchmark sensor behavior under compressive loading.
+          Using amplifier and filter circuits, I quantified signal quality, sensitivity, and noise across sensor candidates.
+          Data was collected using the serial monitor and visualized in real-time using Python plotting scripts.
+        </p>
+
+        <div class="image-bubble">
+          <img src="assets/images/smart-bra/sensor-testing.png" alt="Sensor Testing" class="cad-electronics-image"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="bubble">
+      <h2 id="test-jigs">Custom Test Jigs</h2>
+      <p>
+        I developed several custom jigs to evaluate sensor response to localized compression and stretch.
+        These jigs featured modular inserts to accommodate various sensor sizes, applied loads using weighted sliders, and provided reliable test repeatability.
+      </p>
+
+      <div class="centered-image-pair2">
+        <div class="image-block">
+          <img src="assets/images/smart-bra/jig-1.png" alt="Pressure Jig">
+          <p class="image-caption bubble">Pressure Sensor Test Jig</p>
+        </div>
+        <div class="image-block">
+          <img src="assets/images/smart-bra/jig-2.png" alt="Stretch Jig">
+          <p class="image-caption bubble">Strain Sensor Stretch Jig</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bubble">
+      <h2 id="integration">Integration Into Bra System</h2>
+      <p>
+        I translated electrical sensor layouts into physical prototypes, integrating selected sensors into textile samples.
+        This included iterative prototyping with sewable contacts, signal routing, and comfort optimization for wearability.
+        I also collaborated with the firmware team to align sensor outputs with massage logic and assisted in packaging layouts.
+      </p>
+
+      <div class="image-bubble">
+        <img src="assets/images/smart-bra/integration-demo.png" alt="Sensor Integration Demo" class="cad-electronics-image"/>
+      </div>
+    </section>
+
+    <div style="margin-top: 40px;">
+      <a href="index.html">← Back to Projects</a>
+    </div>
   </main>
 </body>
 </html>
