@@ -9,14 +9,28 @@
 <div class="floating-sidebar">
   <div class="sidebar-title">Navigation Bar</div>
   <ul>
-    <li><a href="#trakstar-overview">Trakstar Sensor Characterization</a></li>
-    <li><a href="#trakstar-sensors">The Trakstar Sensors</a></li>
-    <li><a href="#function-in-myhand">Functionality Within MyHand Orthosis Robot</a></li>
-    <li><a href="#prob-stat">Problem Statement</a></li>
-    <li><a href="#testing-accuracy">Characterizing Trakstar Accuracy</a></li>
-    <li><a href="#optimal-config">Optimal Sensor Configuration</a></li>
-    <li><a href="#sensor-integration">Trakstar-MyHand Integration</a></li>
-    <li><a href="#pip-sensor-mount">PIP Sensor Mount</a></li>
+    <div class="sidebar-group">
+      <li><a href="#trakstar-overview">Trakstar Sensor Characterization</a></li>
+    </div>
+    <div class="sidebar-group">
+      <li><a href="#trakstar-sensors">The Trakstar Sensors</a></li>
+      <li><a href="#function-in-myhand" class="muted-blue">Functionality Within MyHand Orthosis Robot</a></li>
+    </div>
+    <div class="sidebar-group">
+      <li><a href="#prob-stat">Problem Statement</a></li>
+    </div>
+    <div class="sidebar-group">
+      <li><a href="#testing-accuracy">Characterizing Trakstar Accuracy</a></li>
+    </div>
+    <div class="sidebar-group">
+      <li><a href="#optimal-config">Optimal Sensor Configuration</a></li>
+    </div>
+    <div class="sidebar-group">
+      <li><a href="#sensor-integration">Trakstar-MyHand Integration</a></li>
+      <li><a href="#pip-sensor-mount" class="muted-blue">PIP Sensor Mount</a></li>
+      <li><a href="#mcp-sensor-mount" class="muted-blue">MCP Sensor Mount</a></li>
+      <li><a href="#hand-sensor-mount" class="muted-blue">Hand Base Sensor Mount</a></li>
+    </div>
   </ul>
 </div>
 
@@ -40,7 +54,7 @@
         </div>
             
         <p>
-            As part of the ROAM Lab at Columbia University, within the Myhand Orthosis Robot project, cx I characterized and assessed the accuracy of trakstar sensor performance within close proximity of one another. 
+            As part of the ROAM Lab at Columbia University, within the Myhand Orthosis Robot project, I characterized and assessed the accuracy of trakstar sensor performance within close proximity of one another. 
             Through my experimentation and data analysis, utilizing ROS, RViz and Python within a Linux environment, I was able to identify a configuration of trakstar sensors which not only decreased the 
             sensor footprint within the MyHand Robot by 75% and improve joint angle reporting accuracy to within 5 degrees.
         </p>
@@ -120,150 +134,150 @@
           </li>
         </ul>
       </p>
-
-      <div class="bubble">
-        <h3 id="testing-accuracy">Characterizing Trakstar Accuracy</h3>
-        <p>
-          To characterize the accuracy of the sensors, I designed a custom test jig which replicated relative distance and orientation between sensors 
-          when situated upon the patient's finger. The jig features a peg board system allowing the sensors to be fixed at speciied incremental angles while remaining coplanar.
-        </p>
-
-        <div class="image-bubble">
-         <img src="assets/images/trakstar/test-jig-2.png" alt="Test Jig 2" class="cad-electronics-image">
-        </div>
-
-        <p>
-          The PIP angle - between trakstar1 and trakstar2 - was kept constant at 90 degrees. The mcp angle - between trakstar0 and trakstar1 - was then varied from 45, to 90 to 
-          135 degrees with the goal to observe the error measured between the actual MCP and PIP angles.
-        </p>
-
-      </div>
-
-      <div class="bubble">
-        <h3 id="optimal-config">Optimal Sensor Configuration</h3>
-        <p>
-          Using the custom test jig I determined the optimal configuration of the 3 avilable trakstar sensors:
-
-        </p>
-        <div class="sensor-layout">
-          <div class="sensor-column">
-            <div class="sensor-title">Rectangular Trakstar Sensor</div>
-            <img src="assets/images/trakstar/old-trakstar-zoom.png" alt="Old Trakstar">
-            <div class="sensor-caption">18.5mm x 8mm (LxW)</div>
-          </div>
-          <div class="sensor-column">
-            <div class="sensor-title">Cylindrical Trakstar Sensor</div>
-            <img src="assets/images/trakstar/new-trakstar-zoom.png" alt="New Trakstar">
-            <div class="sensor-caption">14mm x 5.7mm (LxD)</div>
-          </div>
-          <div class="sensor-column">
-            <div class="sensor-title">Pill-Like Trakstar Sensor</div>
-            <img src="assets/images/trakstar/tiny-trakstar-zoom.png" alt="Tiny Trakstar">
-            <div class="sensor-caption">9mm x 1.8mm (LxD)</div>
-          </div>
-        </div>
-
-        <p>
-          Four configurations were tested as seen in the table below. The joint orientations and positions were recorded 
-          as tranforms utilizing ROS and data analysis was conducted within Python to obtain the joint angles. Those angles were compared to the actual 
-          angles and the error between the two were calculated and dsiplayed in the table below.
-        </p>
-
-         <img src="assets/images/trakstar/sensor-config-results.png" alt="Sensor Configuration Results" class="hero-image">
-      
-        <p>
-          Looking at both the error and form factor of the individual sensors within each configuration, it was clear that the Cylindrical - Pill-Like - Pill-Like configuraion 
-          would provide the most accurate results while minimizing the sensor footprint within the robot. Overall this reduced the sensor footprint by 75% leading to a cleaner assembly 
-          and more reliable data collection.
-        </p>
-
-        <div class="image-bubble">
-         <img src="assets/images/trakstar/optimal-sensor-config.png" alt="Optimal Sensor Configuration" class="cad-electronics-image">
-        </div>
-      </div>  
-
-
-
-      <div class="bubble">
-        <h3 id="sensor-integration">Trakstar-MyHand Integration</h3>
-        <p>
-          To incorporate the sensors into the MyHand Orthosis Robot I designed custom mounts within SolidWorks to be FDM printed for assembly. 
-          
-        </p>
-        <div class="bubble">
-          <h4 id="pip-sensor-mount">PIP Sensor Mount</h4>
-          
-          <p>
-            The PIP sensor mount had 4 main design constraints:
-            <ul>
-              <li>The mount needed to fit the small scale dimensions of the PIP segment.</li>
-              <li>The mount needed to function as a finger splint between the PIP and DIP segments.</li>
-              <li>The mount needed to hold the Futek load cell and the Pill-Like trakstar sensor.</li>
-              <li>The Futek load cell and Pill-Like trakstar sensor had to be easily assembled and disassembled form the mount for maintenance.</li>
-            </ul>
-          </p>
-
-          <p>
-            To solve this issue I designed a 3-component splint mount assembly balancing ease of assembly and a minamalist design. 
-            The Futek load cell is first inserted into the splint body and fixed in place with a set screw. The Pill-Like trakstar sensor holder component 
-            then slots into the splint body of the mount and is fixed with a locking pin. The trakstar sensor sits within its designated slot within its holder 
-            and is fixed in position and orientation by a plastic set screw.
-          </p>
-
-          <img src="assets/images/trakstar/pip-finger-splint.gif" alt="PIP Finger Splint Mount" class="hero-image">
-          
-
-        </div>
-
-        <div class="bubble">
-
-          <h4 id="mcp-sensor-mount">MCP Sensor Mount</h4>
-
-          <p>
-            The MCP sensor mount had 2 main design constraints:
-            <ul>
-              <li>The mount needed to fit the small scale dimensions of the MCP segment.</li>
-              <li>The mount needed to mount to the patient's MCP segment quickly and easily.</li>
-            </ul>
-          </p>
-
-          <p>
-            To address this, I designed a mount which conforms to the patient's natural curvature of the MCP 
-            segment and fixed the sensor in place with a plastic set screw. I also fabircated a soft elastic and velcro adjustable band 
-            allowing the sensor to be securely attached during patient usage.
-          </p>
-          <img src="assets/images/trakstar/mcp-sensor-mount.gif" alt="MCP Sensor Mount" class="hero-image">
-
-        </div>
-
-        <div class="bubble">
-
-          <h4 id="base-mount">Hand Sensor Mount</h4>
-
-          <p>
-            The hand sensor mount had 3 main design constraints:
-            <ul>
-              <li>The mount needed to fit the small scale dimensions of the hand.</li>
-              <li>The mount needed to be coplanar with the PIP and MCP sensors.</li>
-              <li>The mount needed to mount to the patient's hand quickly and easily.</li>
-            </ul>
-          </p>
-
-          <p>
-            To mount the sensor to the hand, I modified my design of the existing mounting shield 
-            on the hand splint. This allowed the sensor to be easily removable when needed, as the mounting shield was previously designed as such. 
-            Note that the sensor mount is dynamically adjustable allowing it to remain coplanar with the PIP and MCP sensors despite being used on hands of varying dimensions. 
-          </p>  
-
-          <img src="assets/images/trakstar/hand-sensor-mount.gif" alt="Hand Sensor Mount" class="hero-image">
-        
-          </div>
-
-        
-
-      </div>
-    
     </section>
+
+    <section class="bubble">
+      <h2 id="testing-accuracy">Characterizing Trakstar Accuracy</h2>
+      <p>
+        To characterize the accuracy of the sensors, I designed a custom test jig which replicated relative distance and orientation between sensors 
+        when situated upon the patient's finger. The jig features a peg board system allowing the sensors to be fixed at speciied incremental angles while remaining coplanar.
+      </p>
+
+      <div class="image-bubble">
+        <img src="assets/images/trakstar/test-jig-2.png" alt="Test Jig 2" class="cad-electronics-image">
+      </div>
+
+      <p>
+        The PIP angle - between trakstar1 and trakstar2 - was kept constant at 90 degrees. The mcp angle - between trakstar0 and trakstar1 - was then varied from 45, to 90 to 
+        135 degrees with the goal to observe the error measured between the actual MCP and PIP angles.
+      </p>
+
+    </section>
+
+    <section class="bubble">
+      <h2 id="optimal-config">Optimal Sensor Configuration</h2>
+      <p>
+        Using the custom test jig I determined the optimal configuration of the 3 avilable trakstar sensors:
+
+      </p>
+      <div class="sensor-layout">
+        <div class="sensor-column">
+          <div class="sensor-title">Rectangular Trakstar Sensor</div>
+          <img src="assets/images/trakstar/old-trakstar-zoom.png" alt="Old Trakstar">
+          <div class="sensor-caption">18.5mm x 8mm (LxW)</div>
+        </div>
+        <div class="sensor-column">
+          <div class="sensor-title">Cylindrical Trakstar Sensor</div>
+          <img src="assets/images/trakstar/new-trakstar-zoom.png" alt="New Trakstar">
+          <div class="sensor-caption">14mm x 5.7mm (LxD)</div>
+        </div>
+        <div class="sensor-column">
+          <div class="sensor-title">Pill-Like Trakstar Sensor</div>
+          <img src="assets/images/trakstar/tiny-trakstar-zoom.png" alt="Tiny Trakstar">
+          <div class="sensor-caption">9mm x 1.8mm (LxD)</div>
+        </div>
+      </div>
+
+      <p>
+        Four configurations were tested as seen in the table below. The joint orientations and positions were recorded 
+        as tranforms utilizing ROS and data analysis was conducted within Python to obtain the joint angles. Those angles were compared to the actual 
+        angles and the error between the two were calculated and dsiplayed in the table below.
+      </p>
+
+        <img src="assets/images/trakstar/sensor-config-results.png" alt="Sensor Configuration Results" class="hero-image">
+    
+      <p>
+        Looking at both the error and form factor of the individual sensors within each configuration, it was clear that the Cylindrical - Pill-Like - Pill-Like configuraion 
+        would provide the most accurate results while minimizing the sensor footprint within the robot. Overall this reduced the sensor footprint by 75% leading to a cleaner assembly 
+        and more reliable data collection.
+      </p>
+
+      <div class="image-bubble">
+        <img src="assets/images/trakstar/optimal-sensor-config.png" alt="Optimal Sensor Configuration" class="cad-electronics-image">
+      </div>
+    </section>  
+
+
+
+    <section class="bubble">
+      <h2 id="sensor-integration">Trakstar-MyHand Integration</h2>
+      <p>
+        To incorporate the sensors into the MyHand Orthosis Robot I designed custom mounts within SolidWorks to be FDM printed for assembly. 
+        
+      </p>
+      <div class="bubble">
+        <h3 id="pip-sensor-mount">PIP Sensor Mount</h3>
+        
+        <p>
+          The PIP sensor mount had 4 main design constraints:
+          <ul>
+            <li>The mount needed to fit the small scale dimensions of the PIP segment.</li>
+            <li>The mount needed to function as a finger splint between the PIP and DIP segments.</li>
+            <li>The mount needed to hold the Futek load cell and the Pill-Like trakstar sensor.</li>
+            <li>The Futek load cell and Pill-Like trakstar sensor had to be easily assembled and disassembled form the mount for maintenance.</li>
+          </ul>
+        </p>
+
+        <p>
+          To solve this issue I designed a 3-component splint mount assembly balancing ease of assembly and a minamalist design. 
+          The Futek load cell is first inserted into the splint body and fixed in place with a set screw. The Pill-Like trakstar sensor holder component 
+          then slots into the splint body of the mount and is fixed with a locking pin. The trakstar sensor sits within its designated slot within its holder 
+          and is fixed in position and orientation by a plastic set screw.
+        </p>
+
+        <img src="assets/images/trakstar/pip-finger-splint.gif" alt="PIP Finger Splint Mount" class="hero-image">
+        
+
+      </div>
+
+      <div class="bubble">
+
+        <h3 id="mcp-sensor-mount">MCP Sensor Mount</h3>
+
+        <p>
+          The MCP sensor mount had 2 main design constraints:
+          <ul>
+            <li>The mount needed to fit the small scale dimensions of the MCP segment.</li>
+            <li>The mount needed to mount to the patient's MCP segment quickly and easily.</li>
+          </ul>
+        </p>
+
+        <p>
+          To address this, I designed a mount which conforms to the patient's natural curvature of the MCP 
+          segment and fixed the sensor in place with a plastic set screw. I also fabircated a soft elastic and velcro adjustable band 
+          allowing the sensor to be securely attached during patient usage.
+        </p>
+        <img src="assets/images/trakstar/mcp-sensor-mount.gif" alt="MCP Sensor Mount" class="hero-image">
+
+      </div>
+
+      <div class="bubble">
+
+        <h3 id="base-mount">Hand Sensor Mount</h3>
+
+        <p>
+          The hand sensor mount had 3 main design constraints:
+          <ul>
+            <li>The mount needed to fit the small scale dimensions of the hand.</li>
+            <li>The mount needed to be coplanar with the PIP and MCP sensors.</li>
+            <li>The mount needed to mount to the patient's hand quickly and easily.</li>
+          </ul>
+        </p>
+
+        <p>
+          To mount the sensor to the hand, I modified my design of the existing mounting shield 
+          on the hand splint. This allowed the sensor to be easily removable when needed, as the mounting shield was previously designed as such. 
+          Note that the sensor mount is dynamically adjustable allowing it to remain coplanar with the PIP and MCP sensors despite being used on hands of varying dimensions. 
+        </p>  
+
+        <img src="assets/images/trakstar/hand-sensor-mount.gif" alt="Hand Sensor Mount" class="hero-image">
+      
+        </div>
+
+      
+
+    </section>
+    
 
 
     <div style="margin-top: 40px;">
