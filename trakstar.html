@@ -87,7 +87,7 @@
         </div>
         <p>
           To measure the PIP and MCP joint angles overtime, trakstar sensors are placed at the base of the hand, the MCP and the PIP segment. 
-          This creates a kinematic chain which I used to calculate the relative joint angles.
+          This creates a kinematic chain which I used to calculate the relative joint angles within Python.
         </p>
         
         <div class="image-bubble">
@@ -121,8 +121,19 @@
       <div class="bubble">
         <h3 id="testing-accuracy">Characterizing Trakstar Accuracy</h3>
         <p>
-          The sensors are to be used to measure joint stiffness within stroke patients
+          To characterize the accuracy of the sensors, I designed a custom test jig which replicated relative distance and orientation between sensors 
+          when situated upon the patient's finger. The jig features a peg board system allowing the sensors to be fixed at speciied incremental angles while remaining coplanar.
         </p>
+
+        <div class="image-bubble">
+         <img src="assets/images/trakstar/test-jig-2.png" alt="Test Jig 2" class="cad-electronics-image">
+        </div>
+
+        <p>
+          The PIP angle - between trakstar1 and trakstar2 - was kept constant at 90 degrees. The mcp angle - between trakstar0 and trakstar1 - was then varied from 45, to 90 to 
+          135 degrees with the goal to observe the error measured between the actual MCP and PIP angles.
+        </p>
+
       </div>
 
       <div class="bubble">
