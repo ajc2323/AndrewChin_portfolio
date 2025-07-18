@@ -11,8 +11,8 @@
   <ul>
     <li><a href="#trakstar-overview">Trakstar Sensor Characterization</a></li>
     <li><a href="#trakstar-sensors">The Trakstar Sensors</a></li>
-    <li><a href="#Problem Statement">Problem Statement</a></li>
-    <li><a href="#testing-evaluation">Testing & Evaluation</a></li>
+    <li><a href="#prob-stat">Problem Statement</a></li>
+    <li><a href="#testing-accuracy">Characterizing Trakstar Accuracy</a></li>
   </ul>
 </div>
 
@@ -70,12 +70,25 @@
           <p class="image-caption bubble">RViz TF Vsualization</p>
         </div>
       </div>
-    
+     
+      <div class="bubble">
+        <h3>Functionality Within MyHand Orthosis Robot</h3>
+
+        <p>
+          Studies have shown that the fingers of a stroke patient exhibit a degree of stiffness which prevents the hand form opening. 
+          We aimed to calculate this stiffness as a function of joint level torque of the finger, measured and calculated using the load cell, divided by its angular displacement. 
+          Therefore, the trakstar sensors are used to measure the angular displacment of the joints overtime.
+        </p>
+
+        <div class="image-bubble">
+          <img src="assets/images/trakstar/myhand-finger-stiff.png" alt="MyHand Finger Stiffness" class="cad-electronics-image">
+        </div>
+      </div>
 
     </section>
 
     <section class="bubble">
-      <h2 id="Problem Statement">Problem Statement</h2>
+      <h2 id="prob-stat">Problem Statement</h2>
 
       <p>
         There are 3 problem areas/questions that need to be addressed and explored:
@@ -96,10 +109,9 @@
       </p>
 
       <div class="bubble">
-        <h3 id="design-approach">Design Approach</h3>
+        <h3 id="testing-accuracy">Characterizing Trakstar Accuracy</h3>
         <p>
-          [Explain your process for designing the integration method. Mention tools used (e.g., SolidWorks, Altium),
-          goals for form factor, manufacturability, etc.]
+          The sensors are to be used to measure joint stiffness within stroke patients
         </p>
       </div>
 
