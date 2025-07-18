@@ -9,14 +9,27 @@
 <div class="floating-sidebar">
   <div class="sidebar-title">Navigation Bar</div>
   <ul>
-    <li><a href="#trakstar-overview">Trakstar Sensor Characterization</a></li>
-    <li><a href="#trakstar-sensors">The Trakstar Sensors</a></li>
-    <li><a href="#function-in-myhand">Functionality Within MyHand Orthosis Robot</a></li>
-    <li><a href="#prob-stat">Problem Statement</a></li>
-    <li><a href="#testing-accuracy">Characterizing Trakstar Accuracy</a></li>
-    <li><a href="#optimal-config">Optimal Sensor Configuration</a></li>
-    <li><a href="#sensor-integration">Trakstar-MyHand Integration</a></li>
-    <li><a href="#pip-sensor-mount">PIP Sensor Mount</a></li>
+    <div class="sidebar-group">
+      <li><a href="#overview">Get-A-Grip Overview</a></li>
+    </div>
+    <div class="sidebar-group">
+      <li><a href="#problem">Problem Statement</a></li>
+    </div>
+    <div class="sidebar-group">
+      <li><a href="#ux">User Experience</a></li>
+    </div>
+    <div class="sidebar-group">
+      <li><a href="#cad">CAD Design</a></li>
+     <li><a href="#mechanism" class="muted-blue">Our Ratcheting Tooth Strap Mechanism</a></li>
+    </div>
+    <div class="sidebar-group">
+       <li><a href="#fea">Finite Element Analysis & Material Selection</a></li>
+    </div>
+    
+    
+    
+    
+   
   </ul>
 </div>
 
@@ -35,7 +48,7 @@
 
   <main class="project-detail">
     <section class="bubble">
-      <h2>Get-A-Grip</h2>
+      <h2 id="overview">Get-A-Grip</h2>
        <div class="video-embed">
         <iframe 
           width="560" height="315"
@@ -59,7 +72,7 @@
     </section>
 
     <section class="bubble">
-      <h2>The Problem</h2>
+      <h2 id="problem">Problem Statement</h2>
       <p>
         In a world where grip strength diminishes drastically with age and disease, the fitness industry lacks adequate technology to allow those affected to utilize gym equipment safely.
         Unfortunately, current prior art on the market falls short as they disallow the user from easily detaching themselves from the barbell or dumbell. 
@@ -83,7 +96,7 @@
     </section>
 
     <section class="bubble">
-      <h2>User Experience</h2>
+      <h2 id="ux">User Experience</h2>
       <div class="ux-grid">
         <div>
           <img src="assets/images/ux-1.jpg" alt="Step 1" class="inline-image">
@@ -108,11 +121,11 @@
     </section>
 
     <section class="bubble">
-      <h2>CAD Design</h2>
+      <h2 id="cad">CAD Design</h2>
       <img src="assets/images/cad-assembly.jpg" alt="CAD-Assembly" class="hero-image">
 
       <section class="bubble">
-        <h2>Our Ratcheting Tooth Strap Mechanism</h2>
+        <h3 id="mechanism">Our Ratcheting Tooth Strap Mechanism</h3>
         <img src="assets/images/lock-assembly.jpg" alt="Lock-Assembly" class="hero-image">
 
         <div class="mechanism-grid">
@@ -128,7 +141,7 @@
       </section>
 
       <section class="bubble">
-        <h2>Finite Element Analysis & Material Selection</h2>
+        <h2 id="fea">Finite Element Analysis & Material Selection</h2>
 
         <p>
           Finite Element Analysis was conducted on the main load baring components: Pawl, Toothed Plate, and Locking Rod
