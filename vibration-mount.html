@@ -68,14 +68,14 @@
         The MyHand Orthosis Robot is a stroke rehabilitative device which allows patients 
         to regain the dextrous ability of their hands and fingers to grip and hold objects.
         The robot attaches to the users DIP and PIP segments and extends the fingers via a pulley system. 
-        The EMG arm band reads and interprets the microvolt signals of the arm via a machine learning algortihm
+        The EMG arm band reads and interprets the microvolt signals of the arm via a machine learning algorithm
         to open and close the hand based on the patients' input.
       </p>
 
       <div class="bubble">
         <h3 id="patient-usage">Patient Usage</h3>
         <p>
-          Stroke patients often experience high levels of spcticity in their hands where the muscles within 
+          Stroke patients often experience high levels of spasticity in their hands where the muscles within 
           the hand and arm become extremely stiff. This causes involuntary contraction leading to clenched fists, limited finger movement 
           and overall impairment within their daily lives.
         </p>
@@ -90,8 +90,8 @@
     <section class="bubble">
       <h2 id="incorp-vibe">Incorporating Vibration</h2>
       <p>
-        With their Touché Glove, the Stanfrod CHARM lab demonstrated that vibration pulses applied at random intervals and periods worked to 
-        provide patients with spacticity relief. In partnership with the CHARM lab, we worked to incorporate the glove's vibration 
+        With their Touché Glove, the Stanford CHARM lab demonstrated that vibration pulses applied at random intervals and periods worked to 
+        provide patients with spasticity relief. In partnership with the CHARM lab, we worked to incorporate the glove's vibration 
         motors and controller into the MyHand Orthosis Robot.
       </p>
 
@@ -119,18 +119,18 @@
 
       <p>
         Version 2 worked to localize a single vibration motor to each finger, as well as, integrate the motors within the straps used to bind the robot to the patients' hand. 
-        This bypassed the need for the Touché Glove, decreasing the bulk and alowing for constant contact between the fingers and motors. 
+        This bypassed the need for the Touché Glove, decreasing the bulk and allowing for constant contact between the fingers and motors. 
       </p>
       <p>
         However, due to the messy and very long electrical connections, the vibration motors were prone to breaking during assembly, usage, and transport. 
-        The multitude of long wires made donning the robot onto the patients' hands extremely tedious and time consuming 
+        The multitude of long wires made donning the robot onto the patients' hands extremely tedious and time-consuming 
         which is an issue within the time constrained patient sessions.
-        During the patient sessions, there is only a 15 minute window where the robot must be assembled onto the patient and calibrated. 
-        Failure to ready the robot within this time frame has been shown to negatively influence spacticity, skewing the data collected within the latter half of the study.
+        During the patient sessions, there is only a 15-minute window where the robot must be assembled onto the patient and calibrated. 
+        Failure to ready the robot within this time frame has been shown to negatively influence spasticity, skewing the data collected within the latter half of the study.
       </p>
       <p>
-        Therefore, there was a need for a reliable way to quickly insert and remove the vibration motors into and from the MyHand Othosis Robot to decrease overall assembly time and 
-        the constant need for repairs. Version 3, titled the MyHand-RLX Orthosis Robot, addresses these issues with a modular vibratior motor mounting system. 
+        Therefore, there was a need for a reliable way to quickly insert and remove the vibration motors into and from the MyHand Orthosis Robot to decrease overall assembly time and 
+        the constant need for repairs. Version 3, titled the MyHand-RLX Orthosis Robot, addresses these issues with a modular vibration motor mounting system. 
       </p>
 
       <div class="vibration-redesign-wrapper">
@@ -165,7 +165,7 @@
           To create a robust modular mounting system for the vibration motors, 3 new features were designed and implemented:
         </p>
         <ul>
-          <li>A cartidge-like protoboard for easy insertion into and removal from robot assembly.</li>
+          <li>A cartridge-like protoboard for easy insertion into and removal from robot assembly.</li>
           <li>The centralization of the vibration motor connections to a local hub.</li>
           <li>A new soft adjustable elastic band to mount the motors to the patient's fingers. </li>
         </ul>
@@ -175,7 +175,7 @@
       <div class="bubble">
         <h3 id="protoboard">Cartridge-Like Protoboard</h3>
         <p>
-          I devised a cartidge-like protoboard to allow for the seamless integration of the vibration motors within the overall robot. 
+          I devised a cartridge-like protoboard to allow for the seamless integration of the vibration motors within the overall robot. 
           For this, I designed and constructed a custom protoboard with four 2-pin female connectors to which the vibration motors attach. 
           The vibration motors now used a more compact and direct connection method.
           This key update enabled shorted more direct wiring, more secure and easily accessible connections, and it shifted the point of failure 
@@ -185,8 +185,8 @@
         <img src="assets/images/vibe-motor/protoboard-assembly.gif" alt="Protoboard Assembly GIF" class="hero-image">
 
         <p>
-          The hand splint CAD was modified to feature a slot for the catridge on the bottom surface.
-          The cartridge, to which the protoboard mounts, was designed in Solidworks and FDM printed. It features the cartridge insert, 
+          The hand splint CAD was modified to feature a slot for the cartridge on the bottom surface.
+          The cartridge, to which the protoboard mounts, was designed in SolidWorks and FDM printed. It features the cartridge insert, 
           which is accepted by the corresponding slot of the hand splint, M2 mounting slots to secure the protoboard, and a cutout for the soldered connections 
           underneath the board.
         </p>
@@ -216,13 +216,13 @@
         <p>
           A centralized local hub was implemented to organize and streamline connections between the vibration motors and their controller. 
           The wiring from the controller was organized and strengthened with ribbon cable and soldered to an 8 pin female connector which is 
-          designed to recieve the corresponding male connector 
-          pins within the catridge-like protoboard. The mounting shield is used to easily insert the female connector into the hand splint. 
+          designed to receive the corresponding male connector 
+          pins within the cartridge-like protoboard. The mounting shield is used to easily insert the female connector into the hand splint. 
           It simply snaps into place within the hand splint via custom snap fit hooks. 
         </p>
 
         <p>
-          The vibration motor controller was also mounted to the patient's upper arm via a custom made adjustable elastic band. 
+          The vibration motor controller was also mounted to the patient's upper arm via a custom-made adjustable elastic band. 
           This decreased the bulk and clutter around the main components of the robot, resulting in a better patient/user experience.
         </p>
 
@@ -238,10 +238,10 @@
       <h3 id="elastic-band">Adjustable Elastic Vibration Motor Bands</h3>
       <p>
         The old bands which mounted the vibration motors to the finger featured a lack of  
-        adjustability and felxibility, resulting in prolonged assembly times. Closed loop elastic bands required the vibration motors to 
+        adjustability and flexibility, resulting in prolonged assembly times. Closed loop elastic bands required the vibration motors to 
         be assembled onto the patients' fingers before the rest of the robot and the snap buttons 
-        were extremly hard to fasten which contributed to an awkward and slow robot donning process.
-        Lack of adaptation to different finger circumerfences also resulted in loss of contact between the fingers and the vibration motors. 
+        were extremely hard to fasten which contributed to an awkward and slow robot donning process.
+        Lack of adaptation to different finger circumferences also resulted in loss of contact between the fingers and the vibration motors. 
       </p>
 
       <div class="centered-image-pair2">
@@ -256,10 +256,10 @@
       </div>
 
       <p>
-        The new soft vibration motor finger mounts feature a strechable elastic fabric and velcro for 
+        The new soft vibration motor finger mounts feature a stretchable elastic fabric and velcro for 
         increased variable adjustability. The vibration finger mounts were now able to be assembled onto 
         the patients' fingers simply, quickly and at any moment during the donning process. Additionally, the vibration 
-        motors could now be securely bound to the paitnets' fingers ensuring constant contact. This enabled 
+        motors could now be securely bound to the patients'' fingers ensuring constant contact. This enabled 
         the robot to be used on a larger population of patients with varying finger circumferences. 
       </p>
 
