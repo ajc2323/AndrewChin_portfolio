@@ -778,6 +778,10 @@ main {
   background-color: #c8def0;
 }
 
+main.project-detail {
+  margin-left: 270px; /* Adjust based on sidebar width */
+}
+
 /* trakstar sensors */
 
 .sensor-layout {
