@@ -711,14 +711,13 @@ main {
 .floating-sidebar {
   position: fixed;
   top: 120px;
-  left: 30px;
-  width: 220px; /* reduced from wider value */
-  background-color: #f8f9fb; /* soft off-white blue */
-  border-radius: 16px;
-  padding: 20px 18px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  left: 20px;
+  width: 180px; /* Reduced width */
+  background-color: #f8f9fb;
+  border-radius: 12px;
+  padding: 12px 10px; /* Reduced padding */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
   z-index: 1000;
-  width: 230px;
   font-family: sans-serif;
 }
 
@@ -735,38 +734,39 @@ main {
 .floating-sidebar a {
   display: block;
   background-color: #ffffff;
-  padding: 10px 10px;
-  border-radius: 12px;
+  padding: 8px 10px; /* Slightly smaller padding */
+  border-radius: 10px;
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-size: 0.9em; /* Slightly smaller font */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .floating-sidebar a:hover {
   background-color: #e0ecff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   color: #003087;
 }
 
 .sidebar-title {
-  font-size: 1.2em;
+  font-size: 1em; /* Reduced font size */
   font-weight: bold;
   color: #ffffff;
   background-color: #1e88e5;
-  padding: 10px 15px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  padding: 8px 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   text-align: center;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-group {
-  background-color: #f0f0f0; /* soft gray */
-  border-radius: 12px;
-  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 8px;
   margin-bottom: 5px;
 }
 
@@ -776,10 +776,6 @@ main {
 
 .floating-sidebar a.muted-blue:hover {
   background-color: #c8def0;
-}
-
-main.project-detail {
-  margin-left: 270px; /* Adjust based on sidebar width */
 }
 
 /* trakstar sensors */
