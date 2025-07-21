@@ -712,6 +712,7 @@ main {
   position: fixed;
   top: 120px;
   left: 30px;
+  width: 220px; /* reduced from wider value */
   background-color: #f8f9fb; /* soft off-white blue */
   border-radius: 16px;
   padding: 20px 18px;
