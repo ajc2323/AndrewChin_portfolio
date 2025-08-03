@@ -53,7 +53,7 @@
         </iframe>
       </div>
       <p>
-        For the Machine Design project, I, along with a team of 4 other students, designed and built an arcade button-pressing mechanism capable of rapidly and accurately targeting 
+        For this Machine Design project, I, along with a team of 4 other students, designed and built an arcade button-pressing mechanism capable of rapidly and accurately targeting 
         multiple buttons using a single motor. This involved developing a low-inertia linkage system in SolidWorks, optimizing speed and 
         torque through an inertia-matched transmission, and integrating sensors with closed-loop PID control on an Arduino to ensure precise 
         positioning. We fabricated components in the machine shop, assembled the device to meet tight tolerances, and implemented safety 
@@ -82,6 +82,7 @@
                 piece.</li>
             <li><strong>Performance Score Requirement:</strong> The performance score is designed as the number of points accumulated at the end of the round. 
             Points are awarded when a button is successfully pressed. The score should be maximized.</li>
+            <li><strong>Financial Contraint:</strong> Teams are provided with a kit of specified materials. Each team has a budget of $100 to source their transmission and button actuation devices.</li>
             <li><strong>Transmission Angle Constraint:</strong> The transmission angle deviation from the ideal transmission angle of 90 degrees must not exceed 60 degrees.</li>
             <li><strong>Volume Constraint:</strong> The mechanism should be as small as possible. The smallest rectangular box that encases 
                 your device must not exceed 15,000 cubic inches.</li>
@@ -89,31 +90,31 @@
             <li><strong>Craftsmanship Constraint:</strong> The mechanism must be well machined with a good surface finish and be aesthetically pleasing.</li>
         </ul>
       </p>
-
-      
-
-      <p>
-        To complete this project, my teammates and I engaged in the following tasks:
-
-      </p>
     
     </section>
 
     <!-- Concept Development -->
     <section class="bubble">
-      <h2 id="concept-development">Concept Development</h2>
+      <h2 id="concept-development">Transmission Angle Design</h2>
       <p>
-        Initial brainstorming sessions generated multiple design concepts, evaluated based on complexity, manufacturability, 
-        and expected performance. The final concept incorporated [insert key mechanical features here].
+        Utilizing SolidWorks, I constructed a 2-D layout of the 4-bar linkage mechanism that would be able to press the 3 button pairs. I engaged in an iterative design 
+        process optimizing transmission angles, ground pivot points, and coupler geometry.
       </p>
-      <div class="centered-image-pair2">
-        <div class="image-block">
-          <img src="assets/images/machine-design/concept1.png" alt="Concept 1">
-          <p class="image-caption bubble">Initial CAD Concept</p>
+       <div class="sensor-layout">
+        <div class="sensor-column">
+          <div class="sensor-title">Transmission Angle 1</div>
+          <img src="assets/images/machine-design/trans-angle1.png" alt="Transmission Angle 1">
+          <div class="sensor-caption">Deviation = 16.78 degrees</div>
         </div>
-        <div class="image-block">
-          <img src="assets/images/machine-design/concept2.png" alt="Concept 2">
-          <p class="image-caption bubble">Prototype Concept Development</p>
+        <div class="sensor-column">
+          <div class="sensor-title">Transmission Angle 2</div>
+          <img src="assets/images/machine-design/trans-angle2.png" alt="Transmission Angle 2">
+          <div class="sensor-caption">Deviation = 23.70 degrees</div>
+        </div>
+        <div class="sensor-column">
+          <div class="sensor-title">Transmission Angle 3</div>
+          <img src="assets/images/machine-design/trans-angle3.png" alt="Transmission Angle 3">
+          <div class="sensor-caption">Deviation = 12.70 degrees</div>
         </div>
       </div>
     </section>
