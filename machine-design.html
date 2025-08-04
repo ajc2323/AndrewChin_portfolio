@@ -82,7 +82,7 @@
                 piece.</li>
             <li><strong>Performance Score Requirement:</strong> The performance score is designed as the number of points accumulated at the end of the round. 
             Points are awarded when a button is successfully pressed. The score should be maximized.</li>
-            <li><strong>Financial Contraint:</strong> Teams are provided with a kit of specified materials. Each team has a budget of $100 to source their transmission and button actuation devices.</li>
+            <li><strong>Financial Constraint:</strong> Teams are provided with a kit of specified materials. Each team has a budget of $100 to source their transmission and button actuation devices.</li>
             <li><strong>Transmission Angle Constraint:</strong> The transmission angle deviation from the ideal transmission angle of 90 degrees must not exceed 60 degrees.</li>
             <li><strong>Volume Constraint:</strong> The mechanism should be as small as possible. The smallest rectangular box that encases 
                 your device must not exceed 15,000 cubic inches.</li>
@@ -121,11 +121,23 @@
 
     <!-- Final Mechanism -->
     <section class="bubble">
-      <h2 id="final-mechanism">Final Mechanism</h2>
+      <h2 id="final-mechanism">Mechanism Design & Manufacturing</h2>
       <p>
-        The final design integrated precision-machined components, optimized linkages, and compact mounting strategies. 
-        Custom 3D printed and machined parts were used to ensure a balance between strength and weight.
+        The transmission angle design was used to inform the length of our linkages, the ground pivot locations and coupler geometry.
       </p>
+
+      <section class="bubble">
+
+        <h3>Linkages</h3>
+
+        <p>
+            The linkage geometry was designed and modeled within SolidWorks. The design was optimized for structural stability 
+            and the minimization of weight. This is seen by the trusses built into the interior of the links which maintain the integrity of the part while 
+            removing mass. Note that FEA was conducted on the linkages factoring in the worst case loading. 
+        </p>
+ 
+      </section>
+
       <div class="image-bubble">
         <img src="assets/images/machine-design/final-mechanism.png" alt="Final Mechanism" class="cad-electronics-image">
       </div>
