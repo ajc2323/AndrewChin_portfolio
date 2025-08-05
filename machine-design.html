@@ -206,17 +206,25 @@
 
       </section>
 
-
     </section>
 
-    <!-- Testing & Results -->
+    
     <section class="bubble">
-      <h2 id="testing-results">Testing & Results</h2>
+      <h2 id="testing-results">Arduino PID Controller State Machine</h2>
       <p>
-        The machine was tested under multiple load and speed conditions to validate its performance. 
-        Testing confirmed the mechanism met the required criteria, achieving [insert performance metric, e.g., 
-        smooth operation at desired speeds, target force output, or successful task completion].
+        The Arduino IDE used to operate our mechanism was a PID Controlled State Machine. Each button on the board (Red, Blue, Yellow and Green) is fixed on the mounting board and its location is calibrated to its corresponding encoder count value within the DC motor. 
+        During operation, the DC motor rotates until the encoder count matches the target button. This brings the coupler of the mechanism to the button to be pressed. 
       </p>
+      <p>
+        When the mechanism turns on it enters the Calibration State. Here a default voltage is supplied to the motor which moves the mechanism to the starting first button position.
+        Hitting the hard stop limit switch transitions the mechanism to the Wait State. The mechanism then waits for a target button to light, which reads in a high value to a digital pin on the Arduino. This signals the transition to the state correlated with the target button. 
+        Once in the new state, the target position is updated and the PID values (Kp, Kd, and Ki) are updated based upon the previous state. The PID values are used to calculate the desired PWM voltage and output to the motor. 
+        As the coupler approaches the button position, the supplied voltage decreases according the specified PID values and the solenoid actuates the buttons. This logic cycle continues until the time limit of 1 minute is reached.
+      </p>
+
+      <div class="image-bubble">
+        <img src="assets/images/machine-design/state-machine-flow.png" alt="State Machine Flow Chard Logic" class="cad-electronics-image">
+      </div>
     </section>
 
     <!-- Key Takeaways -->
